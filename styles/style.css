@@ -1,0 +1,61 @@
+
+/* =====================================
+   HE STRATEGIC INTELLIGENCE
+   Application Stylesheet
+   ===================================== */
+
+/* Main application background */
+.stApp {
+    background-color: #F7F9FC;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #003054;
+}
+
+/* Project banner */
+.project-banner {
+    background-color: #003054;
+    padding: 30px;
+    border-radius: 12px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.project-banner h1 {
+    color: white;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.project-banner p {
+    color: #E0EAF2;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+/* Information cards */
+.info-card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #E0E6ED;
+    border-radius: 10px;
+    min-height: 115px;
+}
+
+.info-card h4 {
+    color: #003054;
+    margin: 0 0 8px 0;
+}
+
+.info-card p {
+    color: #526575;
+    margin: 0;
+}
+
+/* Primary buttons */
+div.stButton > button[kind="primary"] {
+    background-color: #003054;
+    border-color: #003054;
+}

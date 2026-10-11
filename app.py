@@ -1,3 +1,4 @@
+
 import os
 from pathlib import Path
 
@@ -5,11 +6,19 @@ import streamlit as st
 from dotenv import load_dotenv
 from openai import OpenAI
 
-# Locate .env in the same folder as app.py
-BASE_DIR = Path(__file__).resolve().parent
-ENV_FILE = BASE_DIR / ".env"
 
-# Load API credentials
+# -----------------------------------
+# PROJECT PATHS
+# -----------------------------------
+BASE_DIR = Path(__file__).resolve().parent
+
+ENV_FILE = BASE_DIR / ".env"
+CSS_FILE = BASE_DIR / "styles" / "style.css"
+
+
+# -----------------------------------
+# LOAD ENVIRONMENT VARIABLES
+# -----------------------------------
 load_dotenv(dotenv_path=ENV_FILE, override=True)
 
 
@@ -23,63 +32,15 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+
 # -----------------------------------
 # CUSTOM STYLING
 # -----------------------------------
-st.markdown("""
-<style>
-    .stApp {
-        background-color: #F7F9FC;
-    }
-
-    h1, h2, h3 {
-        color: #003054;
-    }
-
-    .project-banner {
-        background-color: #003054;
-        padding: 30px;
-        border-radius: 12px;
-        color: white;
-        margin-bottom: 25px;
-    }
-
-    .project-banner h1 {
-        color: white;
-        font-size: 34px;
-        margin-bottom: 10px;
-    }
-
-    .project-banner p {
-        color: #E0EAF2;
-        font-size: 16px;
-        margin-bottom: 0;
-    }
-
-    .info-card {
-        background-color: white;
-        padding: 20px;
-        border: 1px solid #E0E6ED;
-        border-radius: 10px;
-        min-height: 115px;
-    }
-
-    .info-card h4 {
-        color: #003054;
-        margin: 0 0 8px 0;
-    }
-
-    .info-card p {
-        color: #526575;
-        margin: 0;
-    }
-
-    div.stButton > button[kind="primary"] {
-        background-color: #003054;
-        border-color: #003054;
-    }
-</style>
-""", unsafe_allow_html=True)
+with open(CSS_FILE, encoding="utf-8") as f:
+    st.markdown(
+        f"<style>{f.read()}</style>",
+        unsafe_allow_html=True
+    )
 
 # -----------------------------------
 # SIDEBAR
