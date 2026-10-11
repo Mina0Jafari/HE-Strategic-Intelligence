@@ -15,3 +15,6 @@ __pycache__/
 
 # Local files
 .DS_Store
+
+# Local vector database
+chroma_db/

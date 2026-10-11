@@ -1,0 +1,41 @@
+
+SIMULATED INSTITUTIONAL PERFORMANCE REPORT
+Institution: Example Metropolitan University
+Reporting Period: 2024/25
+
+IMPORTANT: All figures below are fictional and created
+solely for testing the HE Strategic Intelligence prototype.
+
+STUDENT RETENTION
+
+Overall student retention rate: 84%.
+Previous year retention rate: 87%.
+Institutional retention target: 90%.
+
+Retention among first-year undergraduate students: 79%.
+Retention among postgraduate taught students: 91%.
+
+STUDENT SATISFACTION
+
+Overall student satisfaction: 76%.
+Previous year student satisfaction: 81%.
+
+Academic support satisfaction: 72%.
+Learning resources satisfaction: 83%.
+
+FINANCIAL PERFORMANCE
+
+Annual operating income: £185 million.
+Annual operating expenditure: £181 million.
+
+Student support services budget: £4.2 million.
+
+STRATEGIC PRIORITIES
+
+1. Improve student retention to 90%.
+2. Increase student satisfaction to 85%.
+3. Strengthen financial sustainability.
+4. Improve student academic support services.
+5. Expand data-informed strategic planning.
+
+END OF SIMULATED REPORT
