@@ -1,41 +1,85 @@
-
 SIMULATED INSTITUTIONAL PERFORMANCE REPORT
-Institution: Example Metropolitan University
-Reporting Period: 2024/25
 
-IMPORTANT: All figures below are fictional and created
-solely for testing the HE Strategic Intelligence prototype.
+Institution: Example Metropolitan University (Fictional)
+Reporting Period: 2024/25
+Dataset Version: 2
+
+IMPORTANT:
+All figures and institutional priorities in this report are fictional and created solely for testing and evaluating the HE Strategic Intelligence prototype.
+
+The accompanying institutional_performance.xlsx workbook contains simulated school-level and programme-level performance data for the academic years 2021/22 to 2024/25.
+
+The fictional institution uses five school codes (ACI, ACE, HSB, CSC and RDSBL) to align the demonstration dataset with the academic structure used in the research case study.
+
+These simulated figures must not be presented as actual University of East London performance.
+
+Publicly published University of East London annual reports and Office for Students information are separate external evidence sources.
 
 STUDENT RETENTION
 
-Overall student retention rate: 84%.
-Previous year retention rate: 87%.
+Reporting Period: 2024/25
+
+Simulated institution-wide student retention rate: 84%.
+Simulated previous-year institution-wide retention rate: 87%.
 Institutional retention target: 90%.
 
-Retention among first-year undergraduate students: 79%.
-Retention among postgraduate taught students: 91%.
+Simulated first-year undergraduate retention rate: 79%.
+Simulated postgraduate taught retention rate: 91%.
+
+The institution-wide and student-category indicators above are independently specified synthetic values. They are not calculated from the school-level records in the accompanying Excel workbook.
+
+The Excel workbook contains undergraduate retention rates for five schools across four academic years. School-level retention comparisons and percentage-point changes should be calculated directly from those records.
 
 STUDENT SATISFACTION
 
-Overall student satisfaction: 76%.
-Previous year student satisfaction: 81%.
+Reporting Period: 2024/25
 
-Academic support satisfaction: 72%.
-Learning resources satisfaction: 83%.
+Simulated institution-wide student satisfaction: 76%.
+Simulated previous-year institution-wide satisfaction: 81%.
+
+Simulated academic support satisfaction: 72%.
+Simulated learning resources satisfaction: 83%.
+
+These institution-wide and category indicators are independently specified synthetic values. They are not weighted aggregates of the school-level satisfaction rates in the Excel workbook.
+
+The Excel workbook provides school-level overall satisfaction data for 2021/22 to 2024/25.
 
 FINANCIAL PERFORMANCE
 
+Reporting Period: 2024/25
+
 Annual operating income: £185 million.
 Annual operating expenditure: £181 million.
+Annual operating surplus: £4 million.
 
-Student support services budget: £4.2 million.
+Simulated student support services budget: £4.2 million.
+
+These financial figures are fictional. Income, expenditure and operating surplus correspond to the 2024/25 Financial Performance worksheet.
+
+The Excel workbook also contains financial figures for the three preceding academic years, enabling trend analysis of operating performance, surplus margins, staff costs and cash reserves.
 
 STRATEGIC PRIORITIES
 
-1. Improve student retention to 90%.
-2. Increase student satisfaction to 85%.
-3. Strengthen financial sustainability.
-4. Improve student academic support services.
-5. Expand data-informed strategic planning.
+The following are simulated strategic priorities for Example Metropolitan University:
+
+1. Improve student retention to the institutional target of 90%.
+2. Increase institution-wide student satisfaction to 85%.
+3. Strengthen financial sustainability and monitor operating margins.
+4. Improve student academic support services, particularly for groups with lower retention.
+5. Expand data-informed strategic planning using institutional and programme-level performance evidence.
+
+DATA INTERPRETATION AND LIMITATIONS
+
+All institutional performance figures in this report are synthetic.
+
+The Excel workbook provides more detailed simulated school-level and programme-level evidence.
+
+Retention, continuation and completion rates describe different measures and should not be treated as interchangeable.
+
+Institution-wide rates should not be calculated as simple averages of school-level rates without suitable population weights and consistent cohort definitions.
+
+Observed changes or associations between retention, satisfaction, enrolment and financial measures do not establish causal relationships.
+
+The simulated institutional dataset and actual public UEL and OfS documents must be clearly distinguished in generated reports.
 
 END OF SIMULATED REPORT

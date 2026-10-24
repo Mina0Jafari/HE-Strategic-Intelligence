@@ -1,11 +1,9 @@
-
 import os
 from pathlib import Path
-
 import streamlit as st
 from dotenv import load_dotenv
 from openai import OpenAI
-from retrieval.document_retriever import search_documents
+from document_retriever import search_documents
 
 # -----------------------------------
 # PROJECT PATHS

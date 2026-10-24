@@ -1,0 +1,952 @@
+[
+  {
+    "question_id": "Q01",
+    "question": "What is the overall student retention rate?",
+    "system": "standalone",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0,
+    "generation_seconds": 3.0664,
+    "total_seconds": 3.0664,
+    "evidence": [],
+    "answer": "Findings:\n- No data or figures regarding student retention rates were provided to analyze or calculate the overall student retention rate.\n\nLimitations:\n- Without any quantitative data (e.g., cohort sizes, number of returning students), no retention rate can be determined.\n- Institution-specific retention rates cannot be assumed or generalized from other sources without supporting evidence.\n\nRecommended Actions:\n- Collect and provide detailed data on student cohorts, including enrollment numbers at the start and retention numbers at specific checkpoints (e.g., after the first year).\n- Use consistent definitions of retention (e.g., fall-to-fall, first-year retention) to ensure accurate measurement.\n- Analyze trends over multiple years for a comprehensive understanding of student retention patterns.",
+    "input_tokens": 68,
+    "output_tokens": 142,
+    "total_tokens": 210
+  },
+  {
+    "question_id": "Q01",
+    "question": "What is the overall student retention rate?",
+    "system": "single_rag",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 2.434,
+    "generation_seconds": 3.068,
+    "total_seconds": 5.5019,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "institutional_performance.txt",
+        "section": "STUDENT RETENTION",
+        "content": "STUDENT RETENTION\nOverall student retention rate: 84%.\nPrevious year retention rate: 87%.\nInstitutional retention target: 90%.\nRetention among first-year undergraduate students: 79%.\nRetention among postgraduate taught students: 91%.",
+        "distance": 0.3866196572780609
+      },
+      {
+        "source_id": "Source 2",
+        "document": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "content": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Education\nLevel: Undergraduate\nRetention Rate: 87\nTarget: 90",
+        "distance": 0.5471023321151733
+      },
+      {
+        "source_id": "Source 3",
+        "document": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "content": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Health\nLevel: Undergraduate\nRetention Rate: 86\nTarget: 90",
+        "distance": 0.582404375076294
+      }
+    ],
+    "answer": "Findings:\n- The overall student retention rate for the institution is 84% (Source 1).\n- This overall rate has declined from the previous year's 87% (Source 1).\n- The institutional retention target is 90% (Source 1).\n- Retention rates by level include 79% for first-year undergraduates and 91% for postgraduate taught students (Source 1).\n- Retention rates by school for undergraduate students show 87% in Education and 86% in Health, both below the 90% target (Source 2 and Source 3).\n\nLimitations:\n- The overall retention rate (84%) does not break down by specific schools beyond Education and Health, limiting detailed analysis of variation across other faculties.\n- The data for school-level retention pertains only to undergraduate students and does not provide postgraduate data by school.\n- The latest academic year for school-level data is 2024/25, while the overall retention data source does not specify the academic year, creating slight uncertainty in direct comparability.\n\nRecommended Actions:\n- Prioritize strategies to improve retention among first-year undergraduates, currently at 79%, as this is notably below both institutional targets and postgraduate retention rates.\n- Investigate factors behind the observed decline in overall retention from 87% to 84% year-on-year.\n- Conduct further detailed retention analysis across all schools to identify specific areas needing intervention, as available data is limited to Education and Health.\n- Align and update data collection processes to ensure consistency in reporting academic years and retention metrics across all institutional levels.\n\nAssumptions:\n- It is assumed that the overall retention rate of 84% reflects a comparable timeframe as the school-level data for 2024/25, though this is not explicitly stated.",
+    "input_tokens": 230,
+    "output_tokens": 355,
+    "total_tokens": 585
+  },
+  {
+    "question_id": "Q01",
+    "question": "What is the overall student retention rate?",
+    "system": "multi_agent",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 2.434,
+    "generation_seconds": 10.6116,
+    "total_seconds": 13.0455,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "institutional_performance.txt",
+        "section": "STUDENT RETENTION",
+        "content": "STUDENT RETENTION\nOverall student retention rate: 84%.\nPrevious year retention rate: 87%.\nInstitutional retention target: 90%.\nRetention among first-year undergraduate students: 79%.\nRetention among postgraduate taught students: 91%.",
+        "distance": 0.3866196572780609
+      },
+      {
+        "source_id": "Source 2",
+        "document": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "content": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Education\nLevel: Undergraduate\nRetention Rate: 87\nTarget: 90",
+        "distance": 0.5471023321151733
+      },
+      {
+        "source_id": "Source 3",
+        "document": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "content": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Health\nLevel: Undergraduate\nRetention Rate: 86\nTarget: 90",
+        "distance": 0.582404375076294
+      }
+    ],
+    "answer": "# Strategic Intelligence Report\n\n## Executive Summary\nThis report examines the overall student retention rate at the institution based on simulated data for the academic year 2024/25. The current overall retention rate is 84%, which falls below the previous year's rate of 87% and misses the institutional target of 90%. Retention performance varies significantly across student categories and schools: first-year undergraduate retention is notably low at 79%, while postgraduate taught students exceed the target with a retention rate of 91%. Undergraduate schools such as Education and Health report retention rates below target, highlighting areas that require attention. This pattern signals potential risks for institutional reputation and funding but also presents opportunities to learn from successful cohorts and improve retention through targeted actions.\n\n## Key Performance Findings\n- The overall institutional student retention rate is 84%, down from 87% in the prior year and below the 90% target [Source 1].\n- Retention by student category reveals:\n  - First-year undergraduate students have the lowest retention at 79%, substantially underperforming relative to the overall rate and target [Source 1].\n  - Postgraduate taught students have a retention rate of 91%, surpassing the 90% institutional target [Source 1].\n- Undergraduate retention rates by school for 2024/25 are:\n  - Education school: 87%, below the 90% target [Source 2].\n  - Health school: 86%, below the 90% target [Source 3].\n\n## Strategic Risks\n- Declining overall retention could negatively affect institutional reputation and key performance metrics linked to student success.\n- The low retention among first-year undergraduates increases dropout risks, potentially affecting future recruitment and student progression.\n- Consistent underperformance against retention targets in core undergraduate schools like Education and Health may impact external quality assessments or accreditation.\n- Disparities in retention rates across student cohorts suggest uneven student experience quality or gaps in institutional support mechanisms.\n\n## Strategic Opportunities\n- Enhancing support mechanisms specifically targeted at first-year undergraduates to raise retention toward or beyond institutional targets.\n- Applying insights and effective practices from postgraduate taught programs, which demonstrate strong retention performance, to undergraduate cohorts.\n- Systematic analysis of retention strategies deployed in higher-performing schools or programs to identify best practices for institutional adoption.\n- Development of tailored, school-specific retention goals to address distinct challenges identified in the Education and Health schools and other cohorts.\n\n## Recommended Actions\n- Launch targeted onboarding and enhanced academic support programs focused on first-year undergraduate students to improve retention rates.\n- Undertake qualitative research (e.g., focus groups, surveys) within undergraduate schools, particularly Education and Health, to diagnose causes of lower retention.\n- Establish cross-departmental task forces tasked with sharing and implementing best retention practices from successful programs across the institution.\n- Implement ongoing, detailed monitoring of retention trends with breakdowns by student category and school to evaluate interventions' effectiveness.\n- Allocate additional student advising and mentoring resources aimed specifically at schools with retention rates below targets.\n\n## Evidence Gaps and Limitations\n- Retention data are limited to the Education and Health undergraduate schools and broad student categories; figures for other schools or levels (postgraduate research, other undergraduate schools) are not reported.\n- No qualitative data or student feedback is available to explain the underlying factors driving retention rates or their decline.\n- Longitudinal data beyond the comparison to the immediate prior year are missing, restricting analysis of longer-term trends.\n- Absence of benchmarking data against peer institutions limits context for evaluating the institution’s retention performance.\n- The report is based entirely on simulated institutional data and should be interpreted accordingly.\n\n## Sources\n- [Source 1] institutional_performance.txt, Section: STUDENT RETENTION\n- [Source 2] institutional_performance.xlsx, Section: Student Retention, Worksheet: Student Retention (Education School)\n- [Source 3] institutional_performance.xlsx, Section: Student Retention, Worksheet: Student Retention (Health School)",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null
+  },
+  {
+    "question_id": "Q02",
+    "question": "What was the previous year retention rate and what is the institutional target?",
+    "system": "standalone",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0,
+    "generation_seconds": 1.8972,
+    "total_seconds": 1.8972,
+    "evidence": [],
+    "answer": "Findings:\n- No specific data on the previous year retention rate has been provided.\n- No institutional target for retention rate has been supplied.\n\nLimitations:\n- Without institution-specific data or documents, it is impossible to determine the actual previous year retention rate.\n- No information on institutional goals or targets is available for comparison or analysis.\n\nRecommended Actions:\n- Collect and review institutional data on the previous year retention rate from the registrar or institutional research office.\n- Obtain official documentation or strategic plans that specify the institutional retention rate targets.\n- Use this verified data to assess progress and inform strategies for retention improvement.",
+    "input_tokens": 74,
+    "output_tokens": 120,
+    "total_tokens": 194
+  },
+  {
+    "question_id": "Q02",
+    "question": "What was the previous year retention rate and what is the institutional target?",
+    "system": "single_rag",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0.2173,
+    "generation_seconds": 3.0161,
+    "total_seconds": 3.2334,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "institutional_performance.txt",
+        "section": "STUDENT RETENTION",
+        "content": "STUDENT RETENTION\nOverall student retention rate: 84%.\nPrevious year retention rate: 87%.\nInstitutional retention target: 90%.\nRetention among first-year undergraduate students: 79%.\nRetention among postgraduate taught students: 91%.",
+        "distance": 0.6085466146469116
+      },
+      {
+        "source_id": "Source 2",
+        "document": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "content": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Business\nLevel: Undergraduate\nRetention Rate: 82\nTarget: 90",
+        "distance": 0.6750513315200806
+      },
+      {
+        "source_id": "Source 3",
+        "document": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "content": "Worksheet: Student Retention\nAcademic Year: 2023/24\nSchool: Business\nLevel: Undergraduate\nRetention Rate: 85\nTarget: 90",
+        "distance": 0.6851171255111694
+      }
+    ],
+    "answer": "Findings:\n- The previous year overall institutional retention rate was 87% (Source 1).\n- The institutional retention target is 90% (Source 1).\n- For the Business School undergraduate level specifically, retention rate for 2023/24 was 85% with a target of 90% (Source 3).\n- For the Business School undergraduate level in 2024/25, the retention rate is 82%, below the target of 90% (Source 2).\n\nLimitations:\n- The overall institution retention rate and target from Source 1 are not disaggregated by school or level; thus, comparisons across sources reflect different cohorts or aggregations.\n- The Business School retention data covers only undergraduate students, which may not represent the entire institution.\n- No detailed explanation for the retention rate drop in the Business School from 85% (2023/24) to 82% (2024/25).\n\nRecommended Actions:\n- Investigate factors contributing to the decline in retention rates in the Business School undergraduate cohort.\n- Compare retention drivers across schools to identify best practices supporting the 90% institutional retention target.\n- Implement targeted interventions particularly for first-year undergraduates, as retention in that group (79%, Source 1) is lower than the overall retention.\n\nEvidence distinguished from assumptions:\n- Retention rates and targets are directly sourced from institutional data (Sources 1, 2, 3).\n- The need for investigation and targeted intervention is a recommended action based on observed retention patterns, not direct evidence.",
+    "input_tokens": 236,
+    "output_tokens": 310,
+    "total_tokens": 546
+  },
+  {
+    "question_id": "Q02",
+    "question": "What was the previous year retention rate and what is the institutional target?",
+    "system": "multi_agent",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0.2173,
+    "generation_seconds": 12.349,
+    "total_seconds": 12.5663,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "institutional_performance.txt",
+        "section": "STUDENT RETENTION",
+        "content": "STUDENT RETENTION\nOverall student retention rate: 84%.\nPrevious year retention rate: 87%.\nInstitutional retention target: 90%.\nRetention among first-year undergraduate students: 79%.\nRetention among postgraduate taught students: 91%.",
+        "distance": 0.6085466146469116
+      },
+      {
+        "source_id": "Source 2",
+        "document": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "content": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Business\nLevel: Undergraduate\nRetention Rate: 82\nTarget: 90",
+        "distance": 0.6750513315200806
+      },
+      {
+        "source_id": "Source 3",
+        "document": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "content": "Worksheet: Student Retention\nAcademic Year: 2023/24\nSchool: Business\nLevel: Undergraduate\nRetention Rate: 85\nTarget: 90",
+        "distance": 0.6851171255111694
+      }
+    ],
+    "answer": "# Strategic Intelligence Report\n\n## Executive Summary\nThis report examines the university’s student retention rates, focusing on the previous year’s performance, current rates, and institutional targets. The overall retention rate has declined from 87% in the previous year to 84% in the current period, both below the institutional target of 90%. Significant retention challenges are evident among first-year undergraduate students and Business school undergraduates, with retention rates substantially below target and declining. In contrast, postgraduate taught students exceed the retention target. Addressing the retention fall-offs, especially in vulnerable cohorts, is critical for meeting strategic goals.\n\n## Key Performance Findings\n- The overall student retention rate is currently 84%, down from 87% the previous year [Source 1].\n- The institutional retention target stands at 90% [Source 1].\n- Retention among first-year undergraduate students is 79%, indicating a significant shortfall relative to the target [Source 1].\n- Postgraduate taught students exceed the retention target with a rate of 91% [Source 1].\n- Business school undergraduate retention rates have decreased from 85% in academic year 2023/24 to 82% in 2024/25, both below the 90% target set for this school and level [Sources 2, 3].\n\n## Strategic Risks\n- The persistent low retention among first-year undergraduates and Business school undergraduates poses a risk to achieving the overall institutional retention target of 90%.\n- The downward trajectory of retention in the Business school's undergraduate cohort may reflect deeper issues related to student engagement, academic support, or curriculum fit.\n- Failure to improve retention could negatively affect the institution’s reputation, impact funding linked to retention performance, and reduce student satisfaction.\n\n## Strategic Opportunities\n- Leverage the success factors contributing to higher postgraduate taught retention to formulate interventions for undergraduates.\n- Implement focused retention initiatives targeting first-year and Business school undergraduate students where retention gaps are most pronounced.\n- Enhance student support services, academic mentoring, and curriculum adjustments informed by retention data to improve student experiences.\n\n## Recommended Actions\n- Conduct comprehensive analysis into the reasons behind the decline in Business school undergraduate retention and low retention among first-year undergraduates.\n- Deploy tailored academic advising, mentoring, and support programs aimed at cohorts identified as at-risk.\n- Establish regular monitoring of retention trends disaggregated by school and student level to detect and address early warning signs promptly.\n- Review the realism of the 90% retention target, adjusting it as necessary to align with institutional capabilities and external benchmarks.\n\n## Evidence Gaps and Limitations\n- Retention data stratification is limited to overall, first-year undergraduate, postgraduate taught, and Business school undergraduate cohorts only. Other schools and levels lack coverage.\n- No qualitative data is available to understand the underlying causes of student attrition or retention success.\n- The difference in academic years covered by overall institutional data and Business school data complicates direct year-on-year comparisons.\n- Definitions of retention (e.g., year-on-year continuation versus program completion) are not explicitly detailed.\n- Additional demographic or program-level retention data would enrich understanding of retention dynamics across diverse student groups.\n\n## Sources\n- [Source 1] Institutional Performance Report, Section: STUDENT RETENTION, institutional_performance.txt\n- [Source 2] Student Retention Data 2024/25, Business School Undergraduate, institutional_performance.xlsx\n- [Source 3] Student Retention Data 2023/24, Business School Undergraduate, institutional_performance.xlsx\n\n---\n\n*This report utilizes simulated institutional data for analysis.*",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null
+  },
+  {
+    "question_id": "Q03",
+    "question": "What are the institutional strategic priorities?",
+    "system": "standalone",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0,
+    "generation_seconds": 1.6115,
+    "total_seconds": 1.6115,
+    "evidence": [],
+    "answer": "**Findings:**  \n- The institutional strategic priorities are not explicitly provided in the input.  \n- Typically, such priorities might focus on academic excellence, research innovation, student success, community engagement, and operational sustainability.  \n\n**Limitations:**  \n- No specific institutional documents, statements, or data have been supplied to identify the actual strategic priorities.  \n- Assumptions based on common higher education themes may not reflect the institution’s unique context or goals.  \n\n**Recommended Actions:**  \n- Obtain and review the institution’s official strategic plan or mission statement to accurately identify its priorities.  \n- Conduct stakeholder interviews or surveys (leadership, faculty, students) to corroborate and clarify strategic aims.  \n- Align analysis and recommendations with documented priorities to ensure relevance and support decision-making.  \n\n**Note:** Without institution-specific information, any listed priorities are speculative and should not be relied upon for formal decisions.",
+    "input_tokens": 67,
+    "output_tokens": 181,
+    "total_tokens": 248
+  },
+  {
+    "question_id": "Q03",
+    "question": "What are the institutional strategic priorities?",
+    "system": "single_rag",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0.2052,
+    "generation_seconds": 3.8607,
+    "total_seconds": 4.0659,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "uel_annual_report_2023_24.pdf",
+        "section": "Page 52",
+        "content": "future development. \nThe Board has primary responsibility for all the affairs of the institution, including setting its \ngeneral strategic direction as follows: \nCorporate Governance\n1. To set, and agree, the mission, strategic vision, and values of the institution, with the \nUniversity Executive Board. \n2. To agree long-term academic and business plans and key performance indicators and \nensure that these meet the interests of stakeholders, especially staff and current and \nfuture students.\n3. To ensure that processes are in place to monitor and evaluate the performance and \neffectiveness of the institution against the strategy, plans and approved key performance \nindicators, which should be, where possible and appropriate, benchmarked against other \ncomparable institutions. \n4. Where the Board of Governors choose to delegate authority to the Vice Chancellor \nand President for the academic, corporate, financial, estate and human resource \nmanagement of the institution, to establish and keep under regular review the policies, \nprocedures and limits within such management functions as shall be undertaken by and \nunder the authority of the head of the institution.\n5. To ensure the es",
+        "distance": 0.9444906711578369
+      },
+      {
+        "source_id": "Source 2",
+        "document": "uel_annual_report_2023_24.pdf",
+        "section": "Page 55",
+        "content": "Whilst not a company, the principles of section 172 of the Companies Act 2006 are being \nfollowed. Governors both individually and collectively, act in the way that they consider, in \ngood faith, would most likely promote the success of the University for the benefit of its \nmembers as a whole, and in doing so the Governors have regard (amongst other matters) to \nthe:  \n – likely consequences of any decisions in the interests of both customers and colleagues, \n – need to foster the University’s business relationships with suppliers, customers, and other \nkey stakeholders, \n – impact of the University’s operations on communities and the environment, \n – desirability of the University in maintaining a reputation for high standards of business \nconduct, and \n – the need to act fairly as between members of the University. \nThe Board of Governors consider the potential consequences of its decisions on its key \nstakeholders, taking into account a wide range of factors. The Board believes that the \nUniversity will be successful by having regard to the views and needs of its wide-ranging \nstakeholders. The University seeks to engage with stakeholders and receive feedback in a \nvariety of w",
+        "distance": 1.0299409627914429
+      },
+      {
+        "source_id": "Source 3",
+        "document": "uel_annual_report_2023_24.pdf",
+        "section": "Page 55",
+        "content": "s to identify the principal risks to the delivery of our policies, aims and objectives, to \nevaluate the nature and extent of those risks and to ensure they are managed. This process \nhas been in place for the year ended 31 July 2024 and up to the date of approval of the \nfinancial statements, the key elements of which are as follows:  \n – the Board meets at least five times in the year to consider the strategic direction \nand plans of the University and to monitor performance against those plans using Key \nPerformance Indicators; \n – there is clear definition of the responsibilities of, and authority delegated to, committees \nof the Board and the executive; \n – the University’s 10-year strategic plan – Vision 2028, adopted by the Board in January \n2019, sets the framework of strategic aims and objectives against which risks are \nassessed and performance is monitored and reported;  \n – a University Risk Register which assesses key risks at institutional level, is maintained and \nis reviewed regularly by the University Executive Board and other senior staff as required;\n – all Schools and Services have risk registers, which are tested during the annual planning \nround, as well as fo",
+        "distance": 1.0385518074035645
+      }
+    ],
+    "answer": "Findings:\n- The institution's strategic priorities are governed primarily by the Board of Governors, which sets the mission, strategic vision, and values in collaboration with the University Executive Board (Source 1).\n- The Board agrees on long-term academic and business plans and key performance indicators (KPIs) to align with stakeholder interests, especially staff and students (Source 1).\n- Maintaining effective corporate governance is a priority, including monitoring and evaluating performance against strategic plans and KPIs, benchmarking against comparable institutions where possible (Source 1).\n- The Board delegates operational authority to the Vice Chancellor and President, who manage academic, corporate, financial, estate, and HR functions within defined policies and limits (Source 1).\n- The institution adheres to principles akin to those in section 172 of the Companies Act 2006, focusing on promoting the university's success for the benefit of all members and considering impacts on customers, colleagues, business relationships, communities, environment, and reputation (Source 2).\n- Stakeholder engagement and feedback are integral to strategy development and risk management (Source 2).\n- Risk management forms a key part of the strategic process, with a University Risk Register reviewed regularly, supported by risk registers in all Schools and Services, within the framework of the university's 10-year strategic plan, Vision 2028 (Source 3).\n- The Board meets at least five times annually to review strategic direction, plans, risks, and performance against KPIs (Source 3).\n\nLimitations:\n- The evidence does not specify particular academic, research, or operational priorities within the broader mission and Vision 2028 framework.\n- No detailed information on how the strategic priorities translate into specific initiatives or targets.\n- Lack of explicit mention of priorities related to digital transformation, diversity and inclusion, or internationalization, which are commonly strategic areas in higher education.\n- The last source excerpt is incomplete, which might omit relevant details on strategic focus areas or implementation.\n\nRecommended Actions:\n1. Clarify and communicate specific strategic priorities derived from Vision 2028 to all stakeholders, including academic and research targets, operational improvements, and student experience enhancement.\n2. Enhance transparency by publishing key strategic initiatives and progress metrics beyond governance and risk oversight, to increase stakeholder understanding and engagement.\n3. Consider reviewing and updating the current strategy to explicitly address emerging sector priorities such as digital innovation, equity and inclusion, sustainability, and global engagement, if not already included.\n4. Ensure comprehensive risk management integrates with strategic development and is communicated effectively to all institutional levels.\n5. Maintain regular stakeholder consultations to align strategic priorities with evolving internal and external expectations.\n\nThese recommendations are based solely on provided evidence (Sources 1, 2, and 3) without assumption beyond stated information.",
+    "input_tokens": 836,
+    "output_tokens": 550,
+    "total_tokens": 1386
+  },
+  {
+    "question_id": "Q03",
+    "question": "What are the institutional strategic priorities?",
+    "system": "multi_agent",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0.2052,
+    "generation_seconds": 11.4895,
+    "total_seconds": 11.6947,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "uel_annual_report_2023_24.pdf",
+        "section": "Page 52",
+        "content": "future development. \nThe Board has primary responsibility for all the affairs of the institution, including setting its \ngeneral strategic direction as follows: \nCorporate Governance\n1. To set, and agree, the mission, strategic vision, and values of the institution, with the \nUniversity Executive Board. \n2. To agree long-term academic and business plans and key performance indicators and \nensure that these meet the interests of stakeholders, especially staff and current and \nfuture students.\n3. To ensure that processes are in place to monitor and evaluate the performance and \neffectiveness of the institution against the strategy, plans and approved key performance \nindicators, which should be, where possible and appropriate, benchmarked against other \ncomparable institutions. \n4. Where the Board of Governors choose to delegate authority to the Vice Chancellor \nand President for the academic, corporate, financial, estate and human resource \nmanagement of the institution, to establish and keep under regular review the policies, \nprocedures and limits within such management functions as shall be undertaken by and \nunder the authority of the head of the institution.\n5. To ensure the es",
+        "distance": 0.9444906711578369
+      },
+      {
+        "source_id": "Source 2",
+        "document": "uel_annual_report_2023_24.pdf",
+        "section": "Page 55",
+        "content": "Whilst not a company, the principles of section 172 of the Companies Act 2006 are being \nfollowed. Governors both individually and collectively, act in the way that they consider, in \ngood faith, would most likely promote the success of the University for the benefit of its \nmembers as a whole, and in doing so the Governors have regard (amongst other matters) to \nthe:  \n – likely consequences of any decisions in the interests of both customers and colleagues, \n – need to foster the University’s business relationships with suppliers, customers, and other \nkey stakeholders, \n – impact of the University’s operations on communities and the environment, \n – desirability of the University in maintaining a reputation for high standards of business \nconduct, and \n – the need to act fairly as between members of the University. \nThe Board of Governors consider the potential consequences of its decisions on its key \nstakeholders, taking into account a wide range of factors. The Board believes that the \nUniversity will be successful by having regard to the views and needs of its wide-ranging \nstakeholders. The University seeks to engage with stakeholders and receive feedback in a \nvariety of w",
+        "distance": 1.0299409627914429
+      },
+      {
+        "source_id": "Source 3",
+        "document": "uel_annual_report_2023_24.pdf",
+        "section": "Page 55",
+        "content": "s to identify the principal risks to the delivery of our policies, aims and objectives, to \nevaluate the nature and extent of those risks and to ensure they are managed. This process \nhas been in place for the year ended 31 July 2024 and up to the date of approval of the \nfinancial statements, the key elements of which are as follows:  \n – the Board meets at least five times in the year to consider the strategic direction \nand plans of the University and to monitor performance against those plans using Key \nPerformance Indicators; \n – there is clear definition of the responsibilities of, and authority delegated to, committees \nof the Board and the executive; \n – the University’s 10-year strategic plan – Vision 2028, adopted by the Board in January \n2019, sets the framework of strategic aims and objectives against which risks are \nassessed and performance is monitored and reported;  \n – a University Risk Register which assesses key risks at institutional level, is maintained and \nis reviewed regularly by the University Executive Board and other senior staff as required;\n – all Schools and Services have risk registers, which are tested during the annual planning \nround, as well as fo",
+        "distance": 1.0385518074035645
+      }
+    ],
+    "answer": "# Strategic Intelligence Report\n\n## Executive Summary\n\nThis report examines the institutional strategic priorities of the university based on simulated institutional data extracted from the 2023-24 annual report. The university’s strategic priorities are primarily governed through a strong corporate governance framework led by the Board of Governors, with operational oversight by the University Executive Board. Central to the strategy is a 10-year strategic plan, Vision 2028, which sets long-term aims and objectives supported by key performance indicators (KPIs), risk management protocols, and benchmarking practices. The institution emphasizes stakeholder interests across staff, students, suppliers, and communities, aligning with principles akin to Section 172 of the Companies Act 2006. Although governance and procedural frameworks are well-articulated, explicit details on thematic priorities such as research, teaching innovations, or financial sustainability are not present in the current evidence. Further data is required to reveal concrete programmatic priorities and performance outcomes relative to strategic aims.\n\n## Key Performance Findings\n\n- The Board of Governors holds primary accountability for setting the university’s mission, strategic vision, values, and long-term academic and business plans, with approval of aligned KPIs to serve stakeholder interests including staff and students [Source 1, p.52].\n\n- The university follows principles similar to Section 172 of the Companies Act 2006, considering the broad impact of decisions on stakeholders such as colleagues, students, suppliers, and the environment, thereby promoting institutional success for the community’s benefit [Source 2, p.55].\n\n- The university maintains a formal 10-year strategic plan, Vision 2028, adopted in 2019, which defines strategic aims and risk assessment frameworks, and the Board convenes at least five times annually to monitor KPIs and institutional performance [Source 3, p.55].\n\n- Institutional and local risk registers are regularly reviewed by senior staff, enabling proactive risk management aligned with strategic objectives [Source 3, p.55].\n\n- Benchmarking of performance indicators against comparable institutions is embedded in monitoring efforts to ensure effectiveness of strategy implementation [Source 1, p.52].\n\n- Delegation of authority to the Vice Chancellor for academic, corporate, financial, estate, and human resource management is clearly defined and subjected to ongoing policy review to mitigate management risks [Source 1, p.52].\n\n## Strategic Risks\n\n- Risks associated with ensuring alignment and fairness in decision-making to balance the interests of diverse stakeholder groups and safeguard the university’s reputation are explicitly recognized [Source 2, p.55].\n\n- Operational risks are mitigated through a layered risk management framework involving institutional and local risk registers, reviewed regularly to manage challenges to policy and objective delivery [Source 3, p.55].\n\n- The governance structure delegates management responsibilities with clear policies and oversight to reduce risks arising from operational and academic leadership [Source 1, p.52].\n\n## Strategic Opportunities\n\n- The university’s commitment to stakeholder engagement and consideration of community and environmental impacts creates opportunities for improved reputation, community integration, and social value creation [Source 2, p.55].\n\n- The Vision 2028 strategic plan offers a stable yet flexible long-term framework that can support innovation in academic offerings, research development, and business models [Source 3, p.55].\n\n- Benchmarking against peer institutions facilitates identification of best practices, performance improvements, and potential strategic partnerships [Source 1, p.52].\n\n## Recommended Actions\n\n- Strengthen mechanisms for stakeholder engagement to ensure evolving needs of staff, students, and external partners are integrated into strategic priorities and planning processes.\n\n- Leverage benchmarking data rigorously to detect performance gaps and adapt academic/business strategies accordingly.\n\n- Increase transparency and communication in risk reporting to the wider university community to bolster collective ownership of strategic goals and risk mitigation.\n\n- Periodically review and refresh the Vision 2028 plan, ensuring relevance amid higher education sector changes and incorporating emerging themes such as digital transformation, sustainability, and inclusivity.\n\n## Evidence Gaps and Limitations\n\n- The current evidence does not provide detailed insight into specific academic, research, teaching, or financial priorities within the overarching strategy.\n\n- There is limited information on how stakeholder feedback concretely influences strategic priority setting or the hierarchy of priorities.\n\n- No data on performance outcomes, progress against Vision 2028 goals, or thematic developments in areas like diversity and inclusion, research focus, or financial sustainability.\n\n- All institutional data referenced is simulated; real-world application requires validation with actual institutional data.\n\n## Sources\n\n- [Source 1] uel_annual_report_2023_24.pdf, Page 52, Corporate Governance and Strategic Direction  \n- [Source 2] uel_annual_report_2023_24.pdf, Page 55, Stakeholder Considerations and Governance Principles  \n- [Source 3] uel_annual_report_2023_24.pdf, Page 55, Strategic Planning and Risk Management Frameworks",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null
+  },
+  {
+    "question_id": "Q04",
+    "question": "How does undergraduate retention vary by school?",
+    "system": "standalone",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0,
+    "generation_seconds": 2.5747,
+    "total_seconds": 2.5747,
+    "evidence": [],
+    "answer": "**Findings:**  \n- Undergraduate retention rates typically vary across different schools within a university, reflecting differences in academic programs, student support services, faculty engagement, and student demographics.  \n- Schools with more rigorous or demanding curricula (e.g., engineering, sciences) sometimes show lower retention compared to schools in the humanities or social sciences, though exceptions exist.  \n- Variations may also be influenced by resources allocated to advising, tutoring, and community building specific to each school.\n\n**Limitations:**  \n- Without institution-specific data, these trends are generalized and may not apply to a particular university.  \n- Retention rates can be influenced by external factors such as economic conditions, student life, or admission selectivity, which vary widely.  \n- Data on retention rates by school is often not publicly detailed or standardized, limiting cross-institution comparisons.\n\n**Recommended Actions:**  \n- Collect and analyze institution-specific retention data by school to identify patterns and target interventions.  \n- Conduct qualitative assessments to understand student experiences in schools with lower retention.  \n- Implement or enhance support programs tailored to schools with lower retention outcomes, such as mentoring or supplemental instruction.  \n- Monitor changes over time post-intervention to assess effectiveness.\n\n**Note:** All findings are based on general literature; institution-specific claims require internal data review.",
+    "input_tokens": 68,
+    "output_tokens": 260,
+    "total_tokens": 328
+  },
+  {
+    "question_id": "Q04",
+    "question": "How does undergraduate retention vary by school?",
+    "system": "single_rag",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0.1862,
+    "generation_seconds": 2.3309,
+    "total_seconds": 2.517,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "institutional_performance.txt",
+        "section": "STUDENT RETENTION",
+        "content": "STUDENT RETENTION\nOverall student retention rate: 84%.\nPrevious year retention rate: 87%.\nInstitutional retention target: 90%.\nRetention among first-year undergraduate students: 79%.\nRetention among postgraduate taught students: 91%.",
+        "distance": 0.513418972492218
+      },
+      {
+        "source_id": "Source 2",
+        "document": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "content": "Worksheet: Student Retention\nAcademic Year: 2023/24\nSchool: Education\nLevel: Undergraduate\nRetention Rate: 90\nTarget: 90",
+        "distance": 0.6930443644523621
+      },
+      {
+        "source_id": "Source 3",
+        "document": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "content": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Education\nLevel: Undergraduate\nRetention Rate: 87\nTarget: 90",
+        "distance": 0.6975023746490479
+      }
+    ],
+    "answer": "Findings:\n- Overall undergraduate retention rate is not explicitly reported; however, overall student retention rate is 84% and retention among first-year undergraduates is 79% (Source 1).\n- For the School of Education, undergraduate retention was 90% in 2023/24, meeting the target of 90% (Source 2).\n- In 2024/25, School of Education undergraduate retention declined to 87%, below the 90% target (Source 3).\n\nLimitations:\n- Retention data by other schools beyond Education is not provided, limiting comparative analysis across all schools.\n- Data for only two academic years is given for the School of Education, insufficient for assessing longer-term trends.\n- No breakdown of retention by year of study beyond first year is available.\n\nRecommended Actions:\n- Collect and analyze undergraduate retention data across all schools to identify variation and target areas needing support.\n- Investigate factors contributing to the decline in Education undergraduate retention from 90% to 87% between 2023/24 and 2024/25.\n- Develop interventions aimed at improving first-year undergraduate retention, currently at 79%, which may drive overall retention improvements.\n- Continue monitoring retention against institutional targets (90%) to guide strategic retention initiatives.\n\nEvidence sources: [1], [2], [3]",
+    "input_tokens": 230,
+    "output_tokens": 267,
+    "total_tokens": 497
+  },
+  {
+    "question_id": "Q04",
+    "question": "How does undergraduate retention vary by school?",
+    "system": "multi_agent",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0.1862,
+    "generation_seconds": 9.7559,
+    "total_seconds": 9.9421,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "institutional_performance.txt",
+        "section": "STUDENT RETENTION",
+        "content": "STUDENT RETENTION\nOverall student retention rate: 84%.\nPrevious year retention rate: 87%.\nInstitutional retention target: 90%.\nRetention among first-year undergraduate students: 79%.\nRetention among postgraduate taught students: 91%.",
+        "distance": 0.513418972492218
+      },
+      {
+        "source_id": "Source 2",
+        "document": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "content": "Worksheet: Student Retention\nAcademic Year: 2023/24\nSchool: Education\nLevel: Undergraduate\nRetention Rate: 90\nTarget: 90",
+        "distance": 0.6930443644523621
+      },
+      {
+        "source_id": "Source 3",
+        "document": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "content": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Education\nLevel: Undergraduate\nRetention Rate: 87\nTarget: 90",
+        "distance": 0.6975023746490479
+      }
+    ],
+    "answer": "# Strategic Intelligence Report\n\n## Executive Summary  \nThis report analyses undergraduate student retention rates by school, highlighting institutional trends, risks, and opportunities based on simulated institutional data. Currently, the overall student retention rate stands at 84%, below the institutional target of 90% and down from 87% the prior year. First-year undergraduate retention is notably lower at 79%, signaling challenges at the entry level. The Education School’s undergraduate retention met the 90% target in 2023/24 but declined to 87% in 2024/25, falling short of the target. Data limitations restrict comparative analysis across other schools and deeper equity-focused insights. Addressing first-year retention and the Education School decline constitutes a strategic priority to improve institutional performance and safeguard reputational and funding positions.\n\n## Key Performance Findings  \n- The overall institutional student retention rate is 84% for the most recent year, down from 87% the previous year, against a target of 90% [Source 1].  \n- First-year undergraduate retention is substantially lower than overall retention at 79%, indicating increased attrition immediately post-entry [Source 1].  \n- At the Education School, undergraduate retention reached 90% in 2023/24, meeting the institutional target, but dropped to 87% in 2024/25, falling short of the 90% target [Source 2, Source 3].  \n\n## Strategic Risks  \n- Persistent shortfalls in retention relative to targets risk damaging the institution's reputation and may negatively impact funding linked to student progression metrics.  \n- Declining retention in the Education School suggests emerging issues that, if unchecked, might spread to other schools, further depressing retention rates institution-wide.  \n- Lower first-year retention will reduce cohort sizes continuing into later years, potentially affecting academic community vitality and financial sustainability of programs.  \n\n## Strategic Opportunities  \n- The Education School’s prior success in achieving a 90% retention rate offers a potential model for effective retention strategies that may be transferable to other schools.  \n- Targeted interventions aimed at improving first-year undergraduate retention could have significant positive effects on overall retention figures.  \n- Comparative benchmarking of retention by school, once more comprehensive data is available, could identify best practices and common obstacles to student persistence.  \n\n## Recommended Actions  \n- Conduct an in-depth diagnostic analysis focused on first-year undergraduate retention to identify key risk factors and inform targeted support initiatives.  \n- Investigate the causes behind the decline in Education School retention in 2024/25 to develop timely remedial strategies and prevent further attrition.  \n- Extract and disseminate best practices from the Education School’s prior success to other schools as part of a retention improvement program.  \n- Improve data collection and monitoring systems to capture retention trends by school, academic year, and ideally by demographic characteristics for equity analysis.  \n\n## Evidence Gaps and Limitations  \n- Retention data for schools other than Education are not available in the current dataset, obstructing cross-school comparative insights.  \n- Absence of disaggregated retention data by demographic variables such as gender, ethnicity, or socio-economic status limits evaluation of equity-related retention dynamics.  \n- No qualitative evidence (e.g., student surveys or exit interviews) is present to explain the underlying reasons for retention outcomes or declines.  \n- The first-year undergraduate retention figure is institution-wide and not divided by school, limiting targeted analysis and intervention design at the school level.  \n- All institutional figures referenced are simulated for analytical purposes, and actual institutional performance may vary.\n\n## Sources  \n- [Source 1] institutional_performance.txt, Section: STUDENT RETENTION  \n- [Source 2] institutional_performance.xlsx, Worksheet: Student Retention, Academic Year: 2023/24, School: Education  \n- [Source 3] institutional_performance.xlsx, Worksheet: Student Retention, Academic Year: 2024/25, School: Education",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null
+  },
+  {
+    "question_id": "Q05",
+    "question": "What does UEL say about its careers-first strategy?",
+    "system": "standalone",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0,
+    "generation_seconds": 2.4408,
+    "total_seconds": 2.4408,
+    "evidence": [],
+    "answer": "Findings:\n- The University of East London (UEL) explicitly describes its approach as a \"careers-first strategy.\"\n- This strategy emphasizes integrating career planning and employability skills throughout the student experience.\n- UEL aims to develop students’ professional capabilities alongside academic learning to enhance graduate outcomes.\n- The institution highlights partnerships with employers and practical work experiences as key components of this approach.\n\nLimitations:\n- Without direct access to UEL’s internal documents or detailed strategic plans, the precise scope and implementation measures of the careers-first strategy are unclear.\n- Evidence on the measurable impact of this strategy on graduate employment rates or student satisfaction is not provided here.\n- Any claims about UEL’s local or sectoral employer engagement rely on publicly available statements and may not reflect current practices.\n\nRecommended Actions:\n- Request or review UEL’s official strategic plan or careers service publications for specific commitments, programs, and outcomes related to the careers-first strategy.\n- Analyze graduate employment data and student feedback to assess effectiveness.\n- Explore opportunities to benchmark UEL’s careers-first approach against other universities’ employability strategies to identify potential enhancements.\n- If advising UEL, consider recommending increased transparency on strategy outcomes and broader employer engagement to validate and refine the approach.\n\nNote: The above findings are based on general communications from UEL about a careers-first approach; institution-specific operational data were not supplied.",
+    "input_tokens": 71,
+    "output_tokens": 273,
+    "total_tokens": 344
+  },
+  {
+    "question_id": "Q05",
+    "question": "What does UEL say about its careers-first strategy?",
+    "system": "single_rag",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0.3065,
+    "generation_seconds": 3.6513,
+    "total_seconds": 3.9578,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "uel_annual_report_2024_25.pdf",
+        "section": "Page 25",
+        "content": "ape.\nUEL is now the UK’s largest, fastest mover in \nnew business growth, ranked 2nd in the UK for \nstudent start-ups, having surged from 90th in \njust a few years (HESA 2025). Even more remark-\nably, the number of UEL-backed firms still trading \nafter three years has increased by over 1,000%.\nThis achievement reflects the University’s \ncommitment to ensuring that students from all \nbackgrounds see entrepreneurship as a viable \ncareer path. Students are 24 per cent more \nlikely than peers nationally to consider starting a \nbusiness (Graduate Outcomes Survey, 2025), and \nthis is translating into sustainable growth. Since \nthe launch of Vision 2028, the number of active \nfirms has risen by more than 1,000%, with 668 \nbusinesses surviving and thriving in the latest \nfigures (HESA, 2025). \nOn average, UEL supports over 150 new \nbusinesses each year, with growth continuing  \nto accelerate even as the wider sector slows \n(HESA, 2025). \nConfidence in career prospects is 9.4 per \ncent above the sector average, showing UEL \ngraduates are equipped to lead in the future \neconomy. (National Student Survey, 2025). \nThese accolades confirm UEL’s reputation as \na new engine of inclusive enterprise",
+        "distance": 0.691372811794281
+      },
+      {
+        "source_id": "Source 2",
+        "document": "uel_annual_report_2024_25.pdf",
+        "section": "Page 22",
+        "content": "livering measurable results.\nUnderpinning this rise is UEL’s Careers \nGuarantee, which commits every student to work- \nrelated learning from the outset. The rise is also \nsupported by our Mental Wealth & Professional \nFitness curriculum, enhanced employer engage-\nment, and embedded enterprise opportunities. \nUEL outperformed many peer institutions in \nnarrowing graduate outcome gaps and driving \nsocial mobility.\nThis recognition underscores UEL’s growing \nreputation for turning ambition into opportunity \nand reinforces our strategic goals under Vision \n2028. It is a testament to the dedication of \nstaff, partners, and students, and reinforces our \nmission to make inclusive, high-impact careers \naccessible to all.\n43\n42\n2024–2025  ANNUAL REPORT",
+        "distance": 0.7253900766372681
+      },
+      {
+        "source_id": "Source 3",
+        "document": "uel_annual_report_2023_24.pdf",
+        "section": "Page 18",
+        "content": "rt-up, and mentoring \nvia the UEL Founders Network. The Founders Network allows UEL \nstudents and graduates to share experiences, get support, and learn from \nmore experienced entrepreneurs within the University community. UEL \nstudents and graduate entrepreneurs who join the network can connect \nwith like-minded founders, celebrate business goals and learn from \nexperienced individuals.\n“BACK:ED is not just about \nhaving the best products/services \nor the most innovative ideas; it's \nabout cultivating a relentless \nfocus on nurturing results for our \nstudents, embedding a culture of \ncollaboration, and maintaining \nthe agility to adapt in an ever-\nchanging landscape”\nVonley Joseph\nUEL Student Enterprise Manager\nIn the past five years,  \nUEL has helped support\nWhat do UEL students \ndo after graduating?\nOver\n10%\nof our graduates in work are employed by \nTimes 100 companies, including Apple, \nAccenture, Clifford Chance, NHS, Civil Service \nand local government\nOver\n33%\nOur graduates deeply care \nabout their communities –\nwork in health \nprofessions or enter \nthe education sector. \n7%\nMany UEL graduates are \nentrepreneurial, with \nstarting their own \nbusinesses within a \nyear of gradu",
+        "distance": 0.7505295276641846
+      }
+    ],
+    "answer": "Findings:\n- UEL's careers-first strategy emphasizes inclusive entrepreneurship and work-related learning, shown by its rise to 2nd in the UK for student start-ups and a 1,000% increase in UEL-backed firms still trading after three years (Source 1).\n- The Careers Guarantee ensures every student engages in work-related learning from the start, supported by employer engagement and enterprise opportunities embedded in the curriculum (Source 2).\n- UEL's Mental Wealth & Professional Fitness curriculum supports students' professional and personal development, contributing to improved career confidence, which is 9.4% above the sector average (Sources 1, 2).\n- The UEL Founders Network facilitates peer and mentor support among student and graduate entrepreneurs, helping nurture collaboration and adaptability (Source 3).\n- Over 10% of employed graduates work for top companies, over 33% enter community-focused sectors, and 7% become entrepreneurs within a year of graduating, demonstrating diverse career outcomes (Source 3).\n\nLimitations:\n- Evidence primarily focuses on entrepreneurial outcomes and may underrepresent other career trajectories.\n- Quantitative data on long-term career progression beyond starting businesses is limited.\n- Student perspectives and employer feedback are summarized but not detailed.\n- External comparison data is limited mostly to sector averages and start-up rankings.\n\nRecommended Actions:\n- Continue expanding the Careers Guarantee and enterprise support, leveraging the positive impact on student entrepreneurship and career confidence.\n- Collect and analyze more detailed career trajectory data post-graduation to assess outcomes across all sectors.\n- Enhance employer partnerships and feedback mechanisms to refine work-based learning components.\n- Promote diverse career pathways in communications to prospective students, highlighting both entrepreneurial and community sector successes.\n- Consider qualitative research capturing student and employer voices to strengthen evidence for continual strategy improvement.\n\nAssumptions:\n- The increase in start-ups and business survivability directly relate to the Careers Guarantee and embedded enterprise curriculum (inferred from temporal association in Sources 1 and 2).\n- Higher career confidence correlates with better employment outcomes (implied but not explicitly stated).",
+    "input_tokens": 835,
+    "output_tokens": 413,
+    "total_tokens": 1248
+  },
+  {
+    "question_id": "Q05",
+    "question": "What does UEL say about its careers-first strategy?",
+    "system": "multi_agent",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0.3065,
+    "generation_seconds": 12.8115,
+    "total_seconds": 13.118,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "uel_annual_report_2024_25.pdf",
+        "section": "Page 25",
+        "content": "ape.\nUEL is now the UK’s largest, fastest mover in \nnew business growth, ranked 2nd in the UK for \nstudent start-ups, having surged from 90th in \njust a few years (HESA 2025). Even more remark-\nably, the number of UEL-backed firms still trading \nafter three years has increased by over 1,000%.\nThis achievement reflects the University’s \ncommitment to ensuring that students from all \nbackgrounds see entrepreneurship as a viable \ncareer path. Students are 24 per cent more \nlikely than peers nationally to consider starting a \nbusiness (Graduate Outcomes Survey, 2025), and \nthis is translating into sustainable growth. Since \nthe launch of Vision 2028, the number of active \nfirms has risen by more than 1,000%, with 668 \nbusinesses surviving and thriving in the latest \nfigures (HESA, 2025). \nOn average, UEL supports over 150 new \nbusinesses each year, with growth continuing  \nto accelerate even as the wider sector slows \n(HESA, 2025). \nConfidence in career prospects is 9.4 per \ncent above the sector average, showing UEL \ngraduates are equipped to lead in the future \neconomy. (National Student Survey, 2025). \nThese accolades confirm UEL’s reputation as \na new engine of inclusive enterprise",
+        "distance": 0.691372811794281
+      },
+      {
+        "source_id": "Source 2",
+        "document": "uel_annual_report_2024_25.pdf",
+        "section": "Page 22",
+        "content": "livering measurable results.\nUnderpinning this rise is UEL’s Careers \nGuarantee, which commits every student to work- \nrelated learning from the outset. The rise is also \nsupported by our Mental Wealth & Professional \nFitness curriculum, enhanced employer engage-\nment, and embedded enterprise opportunities. \nUEL outperformed many peer institutions in \nnarrowing graduate outcome gaps and driving \nsocial mobility.\nThis recognition underscores UEL’s growing \nreputation for turning ambition into opportunity \nand reinforces our strategic goals under Vision \n2028. It is a testament to the dedication of \nstaff, partners, and students, and reinforces our \nmission to make inclusive, high-impact careers \naccessible to all.\n43\n42\n2024–2025  ANNUAL REPORT",
+        "distance": 0.7253900766372681
+      },
+      {
+        "source_id": "Source 3",
+        "document": "uel_annual_report_2023_24.pdf",
+        "section": "Page 18",
+        "content": "rt-up, and mentoring \nvia the UEL Founders Network. The Founders Network allows UEL \nstudents and graduates to share experiences, get support, and learn from \nmore experienced entrepreneurs within the University community. UEL \nstudents and graduate entrepreneurs who join the network can connect \nwith like-minded founders, celebrate business goals and learn from \nexperienced individuals.\n“BACK:ED is not just about \nhaving the best products/services \nor the most innovative ideas; it's \nabout cultivating a relentless \nfocus on nurturing results for our \nstudents, embedding a culture of \ncollaboration, and maintaining \nthe agility to adapt in an ever-\nchanging landscape”\nVonley Joseph\nUEL Student Enterprise Manager\nIn the past five years,  \nUEL has helped support\nWhat do UEL students \ndo after graduating?\nOver\n10%\nof our graduates in work are employed by \nTimes 100 companies, including Apple, \nAccenture, Clifford Chance, NHS, Civil Service \nand local government\nOver\n33%\nOur graduates deeply care \nabout their communities –\nwork in health \nprofessions or enter \nthe education sector. \n7%\nMany UEL graduates are \nentrepreneurial, with \nstarting their own \nbusinesses within a \nyear of gradu",
+        "distance": 0.7505295276641846
+      }
+    ],
+    "answer": "# Strategic Intelligence Report\n\n## Executive Summary\nThis report analyzes the University of East London's (UEL) careers-first strategy, focusing on its strong emphasis on entrepreneurship, work-integrated learning, and inclusive graduate outcomes. Using simulated institutional data, UEL has demonstrated remarkable growth in student start-ups and business survivability, alongside enhanced career confidence and social mobility outcomes. The careers-first approach is anchored by the Careers Guarantee, mental health and professional fitness curricula, and strong employer engagement. Key risks involve potential over-reliance on entrepreneurial metrics and the need to support students pursuing diverse career paths. Opportunities exist to deepen curricular integration, expand mentoring networks, and strengthen employer partnerships. Evidence gaps include limited qualitative data and lack of detailed demographic and disciplinary outcome breakdowns.\n\n## Key Performance Findings\n\n- UEL has dramatically improved its national ranking in student start-ups from 90th to 2nd place in the UK, as per HESA 2025 data, reflecting significant entrepreneurial success [Source 1].\n- The number of UEL-backed firms still trading after three years has surged by over 1,000%, with 668 active businesses currently supported [Source 1].\n- Annually, UEL supports approximately 150 new businesses, maintaining growth despite a broader sector slowdown [Source 1].\n- UEL students are 24% more likely than national peers to consider starting a business, showing a strong entrepreneurial mindset [Source 1].\n- Graduate confidence in career prospects exceeds the sector average by 9.4% [Source 1].\n- The Careers Guarantee commits every student to work-related learning from enrolment, forming a core pillar of UEL’s strategy [Source 2].\n- Complementary initiatives include the Mental Wealth & Professional Fitness curriculum, employer engagement, and embedded enterprise opportunities [Source 2].\n- UEL has successfully narrowed graduate outcome gaps and advanced social mobility, outperforming peer institutions [Source 2].\n- The UEL Founders Network provides a mentoring and collaborative platform for entrepreneurial students and graduates [Source 3].\n- Over 10% of employed graduates work at FTSE 100 or similar high-profile companies; more than 33% are employed in community-focused sectors such as health and education [Source 3].\n- Approximately 7% of graduates start their own businesses within one year post-graduation, indicating active but potentially improvable early entrepreneurship rates [Source 3].\n\n## Strategic Risks\n\n- The ambitious growth in start-ups and business support may be vulnerable to external economic downturns that could undermine start-up sustainability despite internal backing.\n- Overemphasis on quantitative start-up metrics could obscure the holistic assessment of career readiness and success, especially in non-entrepreneurial fields.\n- A strong focus on entrepreneurship and enterprise may inadequately serve students who pursue traditional or alternative career pathways outside business sectors.\n\n## Strategic Opportunities\n\n- Further embed career development and employability skills across all academic disciplines leveraging the Careers Guarantee and curricular innovations.\n- Expand the UEL Founders Network and mentoring programs to boost the proportion of graduates launching businesses soon after graduation.\n- Strengthen and diversify employer partnerships, especially within health, education, and major corporations, to improve career pathways for a broad range of graduates.\n- Systematically highlight and promote UEL’s social mobility successes to attract aspiring students motivated by career advancement and entrepreneurship.\n\n## Recommended Actions\n\n- Introduce qualitative evaluation measures to complement quantitative entrepreneurship data, capturing diverse dimensions of career readiness.\n- Implement targeted initiatives to raise entrepreneurial activity among graduates in their first year post-completion.\n- Enhance graduate destination data collection and sectoral analysis to detect emerging trends and gaps beyond start-ups.\n- Increase resources dedicated to employer partnerships that support work placements aligned with the Careers Guarantee commitment.\n\n## Evidence Gaps and Limitations\n\n- Insufficient detail on the content and measurable impact of the Mental Wealth & Professional Fitness curriculum on career outcomes.\n- Absence of granular career outcome data by academic discipline, demographic groups, or socioeconomic background limits equity impact assessment.\n- Lack of contextual information on the nature, scale, or economic impact of the start-ups initiated by students and graduates.\n- No longitudinal tracking of graduate career progression beyond the three-year business survival window.\n- Missing qualitative feedback from students and graduates on the perceived effectiveness of employer engagement and career support services.\n\n## Sources\n\n- [Source 1] uel_annual_report_2024_25.pdf, Page 25: Data on student start-ups, business survival, entrepreneurship rates, and career confidence.\n- [Source 2] uel_annual_report_2024_25.pdf, Page 22: Details on the Careers Guarantee, Mental Wealth & Professional Fitness curriculum, employer engagement, and social mobility outcomes.\n- [Source 3] uel_annual_report_2023_24.pdf, Page 18: Information on the UEL Founders Network, graduate employment sectors, and entrepreneurship rates within one year post-graduation.\n\n---\n\n*Note: This report is based entirely on simulated institutional data provided for analytical purposes.*",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null
+  },
+  {
+    "question_id": "Q06",
+    "question": "What controls does UEL describe for safeguarding public funding?",
+    "system": "standalone",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0,
+    "generation_seconds": 2.2837,
+    "total_seconds": 2.2837,
+    "evidence": [],
+    "answer": "**Findings:**  \nUEL (University of East London) describes several controls designed to safeguard public funding, typically including:  \n- Robust financial governance frameworks aligning with regulatory requirements.  \n- Internal audit functions to ensure compliance and detect irregularities.  \n- Transparent reporting mechanisms for financial activities.  \n- Risk management policies focused on mitigating financial mismanagement.  \n- Procedures for monitoring and controlling expenditure against budget allocations.  \n\n**Limitations:**  \n- No institution-specific documents or direct quotes from UEL’s policies are provided here. Thus, these points are inferred from common higher education practices rather than confirmed UEL-specific controls.  \n- The exact nature, scope, and effectiveness of UEL’s controls cannot be assessed without access to UEL’s official safeguarding or financial policy documents.  \n\n**Recommended Actions:**  \n1. Review UEL’s publicly available financial governance and safeguarding policies to confirm specific controls.  \n2. Obtain audit reports or financial statements to evaluate the implementation and effectiveness of these controls.  \n3. Compare UEL’s controls against sector benchmarks for safeguarding public funding.  \n4. Develop or update institutional guidelines to address any identified policy gaps or weaknesses.  \n\n**Summary:**  \nWhile typical controls for safeguarding public funding in UK higher education involve governance, auditing, reporting, risk management, and expenditure oversight, confirmation of UEL’s specific controls requires review of their official documentation.",
+    "input_tokens": 71,
+    "output_tokens": 275,
+    "total_tokens": 346
+  },
+  {
+    "question_id": "Q06",
+    "question": "What controls does UEL describe for safeguarding public funding?",
+    "system": "single_rag",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0.2181,
+    "generation_seconds": 2.6413,
+    "total_seconds": 2.8594,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "uel_annual_report_2023_24.pdf",
+        "section": "Page 55",
+        "content": "t \nat the end of the Annual Report. The Board has been able to balance the needs of the \nUniversity’s many stakeholders in considering this wide range of strategic matters.\nAs the governing body of the University of East London, the Board of Governors has \nresponsibility for maintaining a sound system of internal control in support of its policies, \naims and objectives. In so doing it has a responsibility to safeguard the public and other \nfunds for which it is responsible, in accordance with the duties assigned to the Board of \nGovernors in the Articles of Government and terms and conditions of funding for higher \neducation institutions with the OfS up to 31 July 2024 including its regulatory framework. \nThe system of internal control is designed to understand and manage, rather than eliminate, \nthe risk of non-achievement of policies, aims and objectives; it can therefore only provide \nonly a reasonable and not an absolute assurance of effectiveness. It is based on an ongoing \nprocess to identify the principal risks to the delivery of our policies, aims and objectives, to \nevaluate the nature and extent of those risks and to ensure they are managed. This process \nhas been in plac",
+        "distance": 0.9123799800872803
+      },
+      {
+        "source_id": "Source 2",
+        "document": "uel_annual_report_2024_25.pdf",
+        "section": "Page 42",
+        "content": "Statement on internal control by the  \nBoard of Governors \nAs the governing body of the University of East London, the Board of Governors has responsibility \nfor maintaining a sound system of internal control in support of its policies, aims and objectives. In \nso doing it has a responsibility to safeguard the public and other funds for which it is responsible, in \naccordance with the duties assigned to the Board of Governors in the Articles of Government and \nthe OfS’ Terms and Conditions of Funding for 2024/2025 and its Regulatory Framework. \nThe system of internal control is designed to understand and manage, rather than eliminate, the risk \nof non-achievement of policies, aims and objectives; it can therefore provide only a reasonable and \nnot an absolute assurance of effectiveness. It is based on an ongoing process to identify the principal \nrisks to the delivery of our policies, aims and objectives, to evaluate the nature and extent of those \nrisks and to ensure they are managed. This process has been in place for the year ended 31 July 2025 \nand up to the date of approval of the financial statements, and the key elements of it are as follows: \n• The Board meets at least five",
+        "distance": 0.9206910729408264
+      },
+      {
+        "source_id": "Source 3",
+        "document": "uel_annual_report_2024_25.pdf",
+        "section": "Page 32",
+        "content": "holding a person in slavery, servitude, \nforced or compulsory labour, or facilitating \ntheir travel with the intention of exploiting them \nshortly thereafter. \nUEL’s Business  \nUEL is an exempt charity under the terms \nof the Charities Act 2011, with the Office for \nStudents (OfS) acting as the Principal Regulator. \nOur charitable objectives focus on the delivery \nof education and research. As a charity, the \nUniversity must operate for the public benefit. \nWe are a UK-based university providing \neducational services to UK and international \nstudents and carrying out research activities. \nWe partner with UK and internationally based \nacademic institutions and educational providers \nwho are able to deliver UEL courses and their \nown. In addition, we partner with international \nstudent recruitment agents around the world.  \nUEL has five academic Schools and four \nresearch institutes which are supported by \nthe Office for Institutional Equity (OIE) and by \na range of professional services departments, \nincluding Student Services, External Relations, \nProcurement, Finance, People & Culture, Estates, \nInformation Technology, and Compliance, \nGovernance & Legal Services. \n \nWe have 1,55",
+        "distance": 1.0078450441360474
+      }
+    ],
+    "answer": "Findings:\n- The University of East London (UEL) Board of Governors holds responsibility for maintaining a sound system of internal control to support the university’s policies, aims, and objectives, including safeguarding public and other funds (Sources 1, 2).\n- This responsibility is exercised in accordance with the Articles of Government and the Office for Students (OfS) Terms and Conditions of Funding and regulatory framework for the relevant years (Sources 1, 2).\n- The system of internal control is designed not to eliminate but to understand and manage risks that could prevent achieving strategic objectives, providing reasonable—not absolute—assurance of effectiveness (Sources 1, 2).\n- The internal control system includes an ongoing process to identify principal risks, evaluate their nature and extent, and ensure risk management measures are in place (Sources 1, 2).\n- Key elements of this system include regular Board meetings (at least five per year) and continuous review up to the date of approval of financial statements (Source 2).\n\nLimitations:\n- The specific internal control mechanisms (e.g., audit procedures, risk management frameworks, financial controls) are not detailed in the provided extracts.\n- There is no direct evidence on how effectiveness of these controls is monitored or reported.\n- No explicit mention of specific compliance checks or training programs for staff regarding safeguarding of public funds.\n\nRecommended Actions:\n- Review the full Annual Report or internal governance documents to identify detailed risk management practices, internal audit arrangements, and financial controls employed by UEL.\n- Consider requesting additional information on how the Board monitors the effectiveness of these controls and reports to stakeholders.\n- Recommend confirming whether staff training and compliance assurance processes are part of the safeguarding controls framework.\n\nEvidence vs. Assumptions:\n- All statements about UEL’s control responsibilities and approach to risk management are drawn directly from sources 1 and 2.\n- The absence of details on specific controls and monitoring processes is an evidence-based limitation, not an assumption.",
+    "input_tokens": 866,
+    "output_tokens": 394,
+    "total_tokens": 1260
+  },
+  {
+    "question_id": "Q06",
+    "question": "What controls does UEL describe for safeguarding public funding?",
+    "system": "multi_agent",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0.2181,
+    "generation_seconds": 12.9499,
+    "total_seconds": 13.168,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "uel_annual_report_2023_24.pdf",
+        "section": "Page 55",
+        "content": "t \nat the end of the Annual Report. The Board has been able to balance the needs of the \nUniversity’s many stakeholders in considering this wide range of strategic matters.\nAs the governing body of the University of East London, the Board of Governors has \nresponsibility for maintaining a sound system of internal control in support of its policies, \naims and objectives. In so doing it has a responsibility to safeguard the public and other \nfunds for which it is responsible, in accordance with the duties assigned to the Board of \nGovernors in the Articles of Government and terms and conditions of funding for higher \neducation institutions with the OfS up to 31 July 2024 including its regulatory framework. \nThe system of internal control is designed to understand and manage, rather than eliminate, \nthe risk of non-achievement of policies, aims and objectives; it can therefore only provide \nonly a reasonable and not an absolute assurance of effectiveness. It is based on an ongoing \nprocess to identify the principal risks to the delivery of our policies, aims and objectives, to \nevaluate the nature and extent of those risks and to ensure they are managed. This process \nhas been in plac",
+        "distance": 0.9123799800872803
+      },
+      {
+        "source_id": "Source 2",
+        "document": "uel_annual_report_2024_25.pdf",
+        "section": "Page 42",
+        "content": "Statement on internal control by the  \nBoard of Governors \nAs the governing body of the University of East London, the Board of Governors has responsibility \nfor maintaining a sound system of internal control in support of its policies, aims and objectives. In \nso doing it has a responsibility to safeguard the public and other funds for which it is responsible, in \naccordance with the duties assigned to the Board of Governors in the Articles of Government and \nthe OfS’ Terms and Conditions of Funding for 2024/2025 and its Regulatory Framework. \nThe system of internal control is designed to understand and manage, rather than eliminate, the risk \nof non-achievement of policies, aims and objectives; it can therefore provide only a reasonable and \nnot an absolute assurance of effectiveness. It is based on an ongoing process to identify the principal \nrisks to the delivery of our policies, aims and objectives, to evaluate the nature and extent of those \nrisks and to ensure they are managed. This process has been in place for the year ended 31 July 2025 \nand up to the date of approval of the financial statements, and the key elements of it are as follows: \n• The Board meets at least five",
+        "distance": 0.9206910729408264
+      },
+      {
+        "source_id": "Source 3",
+        "document": "uel_annual_report_2024_25.pdf",
+        "section": "Page 32",
+        "content": "holding a person in slavery, servitude, \nforced or compulsory labour, or facilitating \ntheir travel with the intention of exploiting them \nshortly thereafter. \nUEL’s Business  \nUEL is an exempt charity under the terms \nof the Charities Act 2011, with the Office for \nStudents (OfS) acting as the Principal Regulator. \nOur charitable objectives focus on the delivery \nof education and research. As a charity, the \nUniversity must operate for the public benefit. \nWe are a UK-based university providing \neducational services to UK and international \nstudents and carrying out research activities. \nWe partner with UK and internationally based \nacademic institutions and educational providers \nwho are able to deliver UEL courses and their \nown. In addition, we partner with international \nstudent recruitment agents around the world.  \nUEL has five academic Schools and four \nresearch institutes which are supported by \nthe Office for Institutional Equity (OIE) and by \na range of professional services departments, \nincluding Student Services, External Relations, \nProcurement, Finance, People & Culture, Estates, \nInformation Technology, and Compliance, \nGovernance & Legal Services. \n \nWe have 1,55",
+        "distance": 1.0078450441360474
+      }
+    ],
+    "answer": "# Strategic Intelligence Report\n\n## Executive Summary\nThis report assesses the controls described by the University of East London (UEL) for safeguarding public funding, based on a review of its internal control statements and governance framework. UEL’s Board of Governors is the primary body responsible for overseeing internal controls aligned to the University’s strategies, regulatory obligations, and funding terms from the Office for Students (OfS). The system is designed to manage, rather than eliminate, risks to the achievement of policy objectives, thus providing reasonable—but not absolute—assurance over the safeguarding of public funds. UEL operates as an exempt charity regulated by the OfS, further emphasizing accountability for public benefit and use of funding. However, available evidence is limited to broad governance descriptions: it lacks detailed performance data, audit results, or examples of control implementation effectiveness.\n\n## Key Performance Findings\n- The Board of Governors has explicit responsibility for maintaining sound internal controls aimed at safeguarding public and other funds. This duty is set out in UEL’s Articles of Government and the OfS’s funding terms and regulatory framework (up to 31 July 2025) [Source 1], [Source 2].\n- The internal control system involves ongoing identification, evaluation, and management of principal risks that threaten delivery of the University’s policies, aims, and objectives, offering reasonable assurance rather than complete risk elimination [Source 1], [Source 2].\n- The Board meets regularly (at least five times annually) to oversee risk management and internal control processes [Source 2].\n- UEL holds status as an exempt charity regulated by the OfS, which underscores its obligation to demonstrate public benefit, with oversight mechanisms embedded in governance and compliance services across the institution [Source 3].\n\n## Strategic Risks\n- Residual risk remains due to the internal control system’s inherent design providing reasonable, not absolute, assurance—potentially leaving UEL exposed to financial mismanagement or control failure.\n- Evolving funding terms and regulatory requirements from the OfS pose a compliance risk if UEL’s controls are not adapted promptly.\n- As a charity, failure to demonstrate proper stewardship of funds or public benefit could trigger reputational damage or regulatory sanctions.\n- Lack of transparent performance reporting and audit disclosure raises a risk of undisclosed weaknesses or operational inefficiencies within the control environment.\n\n## Strategic Opportunities\n- Strengthening the internal control framework and expanding risk oversight activities at Board level can enhance public fund safeguarding and institutional resilience.\n- Enhancing transparency in reporting on controls’ performance and audit outcomes could improve stakeholder confidence, particularly with the OfS and public funders.\n- Integration of governance with compliance, legal, and financial services offers a holistic approach to managing regulatory and operational risks.\n- Employing advanced risk analytics and monitoring technologies may improve early identification of emerging risks and enhance risk management effectiveness.\n\n## Recommended Actions\n- Implement and disclose periodic independent audits and control reviews with findings reported to the Board and relevant stakeholders to increase accountability and transparency.\n- Develop advanced risk assessment tools and metrics to more precisely evaluate and monitor how effectively risks to public funds are managed.\n- Provide ongoing training and support for Board members and senior management to strengthen risk awareness and control best practices.\n- Regularly update internal control policies and procedures to reflect changes in OfS funding conditions and regulatory requirements.\n- Increase communication frequency and detail with stakeholders on control effectiveness, risk management practices, and compliance status.\n\n## Evidence Gaps and Limitations\n- The analysis is limited to descriptive statements; detailed operational information on specific controls and procedures is not available.\n- No quantitative performance data, such as control failure rates, audit findings, or risk mitigation outcomes, were provided.\n- Absence of information on how controls address emerging risks in areas like digital finance or changing compliance environments.\n- Lack of evidence on stakeholder feedback or external reviews limits full assessment of control robustness and effectiveness.\n- The report is based on simulated institutional data sourced from publicly available annual report excerpts and is not drawn from direct internal audit or compliance records.\n\n## Sources\n- [Source 1] uel_annual_report_2023_24.pdf, Page 55 – Board responsibility for internal control and risk management framework.\n- [Source 2] uel_annual_report_2024_25.pdf, Page 42 – Statement on internal control by the Board of Governors, governance frequency, assurance level.\n- [Source 3] uel_annual_report_2024_25.pdf, Page 32 – UEL’s status as an exempt charity regulated by the OfS and overview of professional services supporting compliance and governance.\n\n---\n\n*This report uses simulated institutional data from the University of East London’s publicly available annual reports for 2023-24 and 2024-25.*",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null
+  },
+  {
+    "question_id": "Q07",
+    "question": "How does UEL describe Vision 2028?",
+    "system": "standalone",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0,
+    "generation_seconds": 1.9618,
+    "total_seconds": 1.9618,
+    "evidence": [],
+    "answer": "**Findings:**  \nThe University of East London (UEL) describes Vision 2028 as a forward-looking strategic framework aimed at positioning the university as a leader in inclusive and innovative higher education. The vision emphasizes commitments to academic excellence, impactful research, student success, and community engagement. It likely outlines strategic priorities and values that guide institutional development over the next decade.\n\n**Limitations:**  \nThis summary is based on general descriptions of university strategic plans and the terminology associated with Vision 2028. Without direct access to UEL’s official publications or statements, specific language, detailed goals, or unique elements of their Vision 2028 cannot be confirmed. Institution-specific nuances and priority areas remain unknown.\n\n**Recommended Actions:**  \n- Obtain and review UEL’s official Vision 2028 documentation to identify precise language, strategic objectives, and implementation plans.  \n- Compare Vision 2028 with previous strategic plans to understand evolution in institutional priorities.  \n- Engage with UEL stakeholders to validate interpretations and gain insights into how Vision 2028 shapes decision-making.  \n\n**Note:** All assertions about UEL Vision 2028 here are inferred from common strategic frameworks and may not reflect the university’s exact description. Direct institutional sources are necessary for definitive answers.",
+    "input_tokens": 70,
+    "output_tokens": 250,
+    "total_tokens": 320
+  },
+  {
+    "question_id": "Q07",
+    "question": "How does UEL describe Vision 2028?",
+    "system": "single_rag",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0.2787,
+    "generation_seconds": 2.4789,
+    "total_seconds": 2.7575,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "uel_annual_report_2023_24.pdf",
+        "section": "Page 41",
+        "content": "028's goals, by prioritising \nenvironmental and financial sustainability in an increasingly complex higher \neducation landscape. \nTogether, we march forward into the second phase of Vision 2028. We \nwelcome all that wish to join us.\n81\nAnnual Report 23/2480",
+        "distance": 0.7591536045074463
+      },
+      {
+        "source_id": "Source 2",
+        "document": "uel_annual_report_2024_25.pdf",
+        "section": "Page 3",
+        "content": "success.\n“Vision 2028 is \ntransforming the \nUniversity of East \nLondon into a truly global \ncareers-first university. \nThe milestones we’ve \nachieved this year \ncontinue to demonstrate \nhow Vision 2028 turns \nambition into action \n— and ensures our \ngraduates are ready to \nshape a more connected, \nequitable and sustainable \nfuture.”\nPROFESSOR AMANDA BRODERICK, \nVICE-CHANCELLOR & PRESIDENT OF \nTHE UNIVERSITY OF EAST LONDON\n5\n4\n2024–2025  ANNUAL REPORT",
+        "distance": 0.8449289202690125
+      },
+      {
+        "source_id": "Source 3",
+        "document": "uel_annual_report_2024_25.pdf",
+        "section": "Page 7",
+        "content": "or & \nPresident, the Executive Board and the \nUniversity’s staff, students, partners and alumni.  \nTheir talent, resilience and ambition give life to \nVision 2028 and meaning to our mission. As an \nalumnus, I know first-hand what a UEL education \nmakes possible. As Chair, I am confident that \nthe University is exceptionally well governed, \nfinancially strong and strategically positioned to \ndeliver even greater impact in the year ahead.\nTogether, we will continue to raise our game to \nensure that opportunity is not a privilege for the \nfew, but a promise delivered for the many.\nWITH BEST WISHES,\nSTEVE ARMSTRONG\n12\n13\n2024–2025  ANNUAL REPORT",
+        "distance": 0.9724505543708801
+      }
+    ],
+    "answer": "Findings:\n- UEL's Vision 2028 is described as a transformative initiative aimed at making the university a \"truly global careers-first university\" focused on preparing graduates to shape a \"more connected, equitable and sustainable future\" (Source 2).\n- The vision prioritizes environmental and financial sustainability amidst a complex higher education environment, marking a second phase of its implementation (Source 1).\n- Vision 2028 embodies the university’s mission to democratize opportunity, ensuring it is accessible to many rather than a privilege for few, driven by the collective effort of university leadership, staff, students, partners, and alumni (Source 3).\n\nLimitations:\n- The descriptions are strategic and aspirational, lacking specific measurable targets or detailed tactical plans within the provided evidence.\n- The sources present positive institutional perspectives without external assessments or benchmarking against peer institutions.\n\nRecommended Actions:\n- UEL should develop and communicate clear metrics to quantify progress toward Vision 2028’s goals, especially regarding career readiness, sustainability, and inclusivity.\n- Consider conducting external reviews or stakeholder consultations to validate the impact and relevance of Vision 2028 initiatives.\n- Leverage testimonials and success stories from graduates and partners to illustrate the real-world outcomes of Vision 2028 in action.\n\nAssumptions:\n- It is assumed that the university leadership remains committed to Vision 2028, as suggested by statements from Vice-Chancellor and Chair (Sources 2 and 3).\n- There is an implied institutional alignment around Vision 2028 across various university stakeholders.",
+    "input_tokens": 468,
+    "output_tokens": 307,
+    "total_tokens": 775
+  },
+  {
+    "question_id": "Q07",
+    "question": "How does UEL describe Vision 2028?",
+    "system": "multi_agent",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0.2787,
+    "generation_seconds": 10.818,
+    "total_seconds": 11.0966,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "uel_annual_report_2023_24.pdf",
+        "section": "Page 41",
+        "content": "028's goals, by prioritising \nenvironmental and financial sustainability in an increasingly complex higher \neducation landscape. \nTogether, we march forward into the second phase of Vision 2028. We \nwelcome all that wish to join us.\n81\nAnnual Report 23/2480",
+        "distance": 0.7591536045074463
+      },
+      {
+        "source_id": "Source 2",
+        "document": "uel_annual_report_2024_25.pdf",
+        "section": "Page 3",
+        "content": "success.\n“Vision 2028 is \ntransforming the \nUniversity of East \nLondon into a truly global \ncareers-first university. \nThe milestones we’ve \nachieved this year \ncontinue to demonstrate \nhow Vision 2028 turns \nambition into action \n— and ensures our \ngraduates are ready to \nshape a more connected, \nequitable and sustainable \nfuture.”\nPROFESSOR AMANDA BRODERICK, \nVICE-CHANCELLOR & PRESIDENT OF \nTHE UNIVERSITY OF EAST LONDON\n5\n4\n2024–2025  ANNUAL REPORT",
+        "distance": 0.8449289202690125
+      },
+      {
+        "source_id": "Source 3",
+        "document": "uel_annual_report_2024_25.pdf",
+        "section": "Page 7",
+        "content": "or & \nPresident, the Executive Board and the \nUniversity’s staff, students, partners and alumni.  \nTheir talent, resilience and ambition give life to \nVision 2028 and meaning to our mission. As an \nalumnus, I know first-hand what a UEL education \nmakes possible. As Chair, I am confident that \nthe University is exceptionally well governed, \nfinancially strong and strategically positioned to \ndeliver even greater impact in the year ahead.\nTogether, we will continue to raise our game to \nensure that opportunity is not a privilege for the \nfew, but a promise delivered for the many.\nWITH BEST WISHES,\nSTEVE ARMSTRONG\n12\n13\n2024–2025  ANNUAL REPORT",
+        "distance": 0.9724505543708801
+      }
+    ],
+    "answer": "# Strategic Intelligence Report\n\n## Executive Summary\nThis report analyses how the University of East London (UEL) describes its Vision 2028 based on simulated institutional data from recent annual reports. Vision 2028 positions UEL as a \"truly global careers-first university\" with a commitment to preparing graduates for a connected, equitable, and sustainable future. Sustainability—both environmental and financial—is a central strategic priority within a complex higher education context. The vision is framed as ambitious yet actionable, emphasizing inclusivity and broad opportunity. Leadership expresses confidence in the university’s governance and financial strength to fulfil this vision. However, detailed quantitative performance data and specific examples of progress remain limited, creating evidence gaps. Strategic risks and opportunities stem largely from the priorities around sustainability, equity, and global employability.\n\n## Key Performance Findings\n- UEL’s Vision 2028 aims to transform the university into a global careers-first institution committed to producing graduates equipped to shape a more connected, equitable, and sustainable world [Source 2].\n- Environmental and financial sustainability are explicit priorities within Vision 2028, recognized as critical in an increasingly complex higher education landscape [Source 1].\n- Vision 2028 encapsulates ambition into concrete milestones, with a strong focus on inclusivity to ensure that opportunity is accessible to many rather than a privileged few [Sources 2, 3].\n- Leadership, including Vice-Chancellor Professor Amanda Broderick and Chair Steve Armstrong, asserts confidence in the university’s strategic positioning, governance, and financial robustness to achieve Vision 2028 goals [Sources 2, 3].\n- The university is described as entering a \"second phase\" of Vision 2028, indicating ongoing progression though no detailed performance metrics or gaps relative to the vision are provided [Source 1].\n\n## Strategic Risks\n- The complexity of the higher education environment may challenge UEL’s ability to maintain environmental and financial sustainability as prioritized in Vision 2028 [Source 1].\n- Delivering on broad inclusivity and equitable access poses risks as these require sustained resources and careful management; failure here could undermine Vision 2028’s promise of opportunity for the many [Source 3].\n- Risks are inferred based on thematic focus; specific risk disclosures or mitigation strategies are not evident in the sources.\n\n## Strategic Opportunities\n- Positioning as a global careers-first university offers potential to enhance graduate employability and increase global competitiveness and reputation [Source 2].\n- Emphasis on sustainability and equity can improve UEL’s social impact and attractiveness to students, staff, and external partners valuing these priorities [Sources 1, 2].\n- Robust leadership and governance structures provide strategic stability, potentially facilitating innovative growth aligned with Vision 2028 ambitions [Source 3].\n\n## Recommended Actions\n- Continue to operationalize Vision 2028 through clearly communicated milestones and progress reports to sustain momentum and stakeholder engagement [Sources 1, 2].\n- Expand programmes and partnerships that bolster global career readiness, reinforcing the \"careers-first\" positioning [Source 2].\n- More fully embed sustainability and equity across all institutional strategies, operations, and curricula to ensure alignment with Vision 2028 [Sources 1, 2].\n- Implement systematic monitoring and transparent reporting of inclusivity metrics to assess progress and address potential equity-related risks [Source 3].\n\n## Evidence Gaps and Limitations\n- No detailed quantitative data or performance metrics were available to evaluate progress against Vision 2028 goals.\n- Absence of case studies or concrete examples demonstrating how the vision translates into tangible outcomes.\n- Limited direct insights from key stakeholders such as students, staff, or external partners restrict understanding of lived experience or broader impact.\n- Challenges or corrective actions during Vision 2028 implementation are not reported.\n- Sources principally summary sections from annual reports may not capture the full detail or granularity of the strategic plan.\n\n### Note\nThis report uses simulated institutional data to analyze UEL’s Vision 2028 and does not reflect actual institutional performance or plans.\n\n## Sources\n1. uel_annual_report_2023_24.pdf, Page 41 — discussion of environmental and financial sustainability priorities, second phase of Vision 2028  \n2. uel_annual_report_2024_25.pdf, Page 3 — Vice-Chancellor statement on Vision 2028 as a global careers-first university focusing on equity and sustainability  \n3. uel_annual_report_2024_25.pdf, Page 7 — Chair’s message emphasizing governance, financial strength, inclusivity, and delivering opportunity",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null
+  },
+  {
+    "question_id": "Q08",
+    "question": "How does UEL describe its role as a local anchor institution?",
+    "system": "standalone",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0,
+    "generation_seconds": 1.9232,
+    "total_seconds": 1.9232,
+    "evidence": [],
+    "answer": "**Findings:**  \nUEL (University of East London) describes its role as a local anchor institution as one that significantly contributes to the social, economic, and cultural development of its surrounding community. This encompasses commitments to local employment, education access, community engagement, and supporting local businesses and public services.\n\n**Limitations:**  \n- No direct quotation or primary document from UEL is supplied here to provide exact language or detail.  \n- Institutional interpretations of “local anchor institution” vary; without UEL-specific policy or strategy texts, the summary is generalized based on common sector usage.  \n- No data on the specific impact or measurable outcomes of UEL’s anchor activities is available.\n\n**Recommended Actions:**  \n- Obtain UEL’s official statements, strategic plans, or community engagement reports to verify and elaborate on their self-description.  \n- Assess how UEL’s anchor role aligns with local economic data and community needs.  \n- Explore stakeholder perspectives within the local area on UEL’s contributions to validate assumptions.  \n- Consider benchmarking UEL’s anchor activities against other universities’ approaches to local engagement and social impact.",
+    "input_tokens": 73,
+    "output_tokens": 223,
+    "total_tokens": 296
+  },
+  {
+    "question_id": "Q08",
+    "question": "How does UEL describe its role as a local anchor institution?",
+    "system": "single_rag",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0.2088,
+    "generation_seconds": 2.8505,
+    "total_seconds": 3.0593,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "uel_annual_report_2024_25.pdf",
+        "section": "Page 32",
+        "content": "holding a person in slavery, servitude, \nforced or compulsory labour, or facilitating \ntheir travel with the intention of exploiting them \nshortly thereafter. \nUEL’s Business  \nUEL is an exempt charity under the terms \nof the Charities Act 2011, with the Office for \nStudents (OfS) acting as the Principal Regulator. \nOur charitable objectives focus on the delivery \nof education and research. As a charity, the \nUniversity must operate for the public benefit. \nWe are a UK-based university providing \neducational services to UK and international \nstudents and carrying out research activities. \nWe partner with UK and internationally based \nacademic institutions and educational providers \nwho are able to deliver UEL courses and their \nown. In addition, we partner with international \nstudent recruitment agents around the world.  \nUEL has five academic Schools and four \nresearch institutes which are supported by \nthe Office for Institutional Equity (OIE) and by \na range of professional services departments, \nincluding Student Services, External Relations, \nProcurement, Finance, People & Culture, Estates, \nInformation Technology, and Compliance, \nGovernance & Legal Services. \n \nWe have 1,55",
+        "distance": 0.7960668206214905
+      },
+      {
+        "source_id": "Source 2",
+        "document": "uel_annual_report_2023_24.pdf",
+        "section": "Page 26",
+        "content": "ccess to high \nquality facilities and to higher education by brining \nyoung people to UEL ’s SportDock and engaging \nthem with sport and role models. \nIn 2024, over 1,683 children from 20 local schools \ntook part in the programme. This year, participants \nhad the opportunity to meet Olympic gold medallist \nChristine Ohuruogu MBE.\nUEL ’s Royal Docks School of Business and Law \ncontinued to provide services through its practice-\nbased centres: the Legal Advice Centre, used by \n360 local residents, T ax and Accountancy Clinic \nand Business Advice Centre. These centres offer \nfree legal, financial and business advice to the \nlocal community, empowering individuals with the \nknowledge and support they need to navigate \ncomplex issues.  \nUEL ’s outreach programmes \nin local schools, including \nsummer schools and access \nprograms, are also helping \nto break down barriers to \nhigher education. These \ninitiatives not only support \nlocal students but also \nstrengthen UEL ’s position \nas a critical partner in the \neducational and economic \ndevelopment of the region. \nCreating Place as both a Local Anchor and Global Gateway\n50 51\nAnnual Report 23/24",
+        "distance": 0.8354395627975464
+      },
+      {
+        "source_id": "Source 3",
+        "document": "uel_annual_report_2024_25.pdf",
+        "section": "Page 26",
+        "content": "eaningful \nimpact. This shortlisting affirms UEL’s role as \na national exemplar of how universities can \npartner locally and innovate globally.\nStart-up Profile: \nLodoland \nUEL and Newham \nPartnership \nShortlisted for \nNational AI Award\nA Global Gateway for Education,  \nInnovation and Opportunity\nIn 2024/2025, UEL strengthened our position as \na global gateway for education and innovation, \nexpanding international reach and impact. Now \namong the UK’s top providers of Transnational \nEducation (TNE), UEL’s global footprint grew \nthrough new partnerships and the success of \nestablished collaborations — uniting education, \nenterprise and research across continents.\nFor the first time, enrolments on UEL degrees \ndelivered with international partners surpassed \n26,000 students, including over 10,000 \nthrough our UNICAF partnership and 5,500 \nvia Metropolitan College in Greece — Europe’s \nlargest transnational education partnership.\nUEL’s ‘glocal anchor’ model, a cornerstone of \nVision 2028, continues to link local innovation \nwith global opportunity, advancing our goal to \nbe the UK’s leading careers-first university. \nThis year, the University deepened ties with key \nregions including",
+        "distance": 0.8637515902519226
+      }
+    ],
+    "answer": "Findings:\n- UEL describes its role as a \"local anchor\" through multiple community engagement and support initiatives. For example, it engages local youth via programs at UEL SportDock involving over 1,683 children from 20 local schools, including role model opportunities with Olympic gold medallist Christine Ohuruogu MBE [Source 2].\n- UEL provides free legal, financial, and business advice to local residents via practice-based centres such as the Legal Advice Centre used by 360 residents, Tax and Accountancy Clinic, and Business Advice Centre, demonstrating direct community support and empowerment [Source 2].\n- Outreach programs including summer schools and access initiatives in local schools aim to break down barriers to higher education and contribute to regional educational and economic development, reinforcing UEL’s local anchor role [Source 2].\n- UEL explicitly labels its approach as a \"glocal anchor\" model in its Vision 2028, linking local innovation with global opportunity. This framing reflects a strategic perspective that combines local impact with global outreach, positioning UEL as a local anchor institution with a global gateway identity [Source 3].\n\nLimitations:\n- The evidence does not provide a single, explicit formal definition of the role of UEL as a local anchor institution.\n- Quantitative details on the overall impact of being a local anchor (e.g., economic impact, community outcomes) beyond participation numbers and service usage are not provided.\n- The links between local anchor activities and broader institutional strategy, beyond references to Vision 2028 and the \"glocal\" concept, are not fully detailed.\n\nRecommended Actions:\n- UEL should consider formally articulating and communicating a clear, comprehensive definition of its role as a local anchor institution to enhance understanding among stakeholders.\n- Expand and integrate impact measurement frameworks for local anchor activities to capture and report qualitative and quantitative outcomes on community and regional development.\n- Leverage the \"glocal anchor\" model to further align local anchor initiatives with global partnership strategies, thereby strengthening UEL’s distinctive positioning.\n  \nEvidence is directly drawn from UEL Annual Reports 2023/24 [Source 2] and 2024/25 [Source 3].",
+    "input_tokens": 897,
+    "output_tokens": 435,
+    "total_tokens": 1332
+  },
+  {
+    "question_id": "Q08",
+    "question": "How does UEL describe its role as a local anchor institution?",
+    "system": "multi_agent",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0.2088,
+    "generation_seconds": 12.345,
+    "total_seconds": 12.5538,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "uel_annual_report_2024_25.pdf",
+        "section": "Page 32",
+        "content": "holding a person in slavery, servitude, \nforced or compulsory labour, or facilitating \ntheir travel with the intention of exploiting them \nshortly thereafter. \nUEL’s Business  \nUEL is an exempt charity under the terms \nof the Charities Act 2011, with the Office for \nStudents (OfS) acting as the Principal Regulator. \nOur charitable objectives focus on the delivery \nof education and research. As a charity, the \nUniversity must operate for the public benefit. \nWe are a UK-based university providing \neducational services to UK and international \nstudents and carrying out research activities. \nWe partner with UK and internationally based \nacademic institutions and educational providers \nwho are able to deliver UEL courses and their \nown. In addition, we partner with international \nstudent recruitment agents around the world.  \nUEL has five academic Schools and four \nresearch institutes which are supported by \nthe Office for Institutional Equity (OIE) and by \na range of professional services departments, \nincluding Student Services, External Relations, \nProcurement, Finance, People & Culture, Estates, \nInformation Technology, and Compliance, \nGovernance & Legal Services. \n \nWe have 1,55",
+        "distance": 0.7960668206214905
+      },
+      {
+        "source_id": "Source 2",
+        "document": "uel_annual_report_2023_24.pdf",
+        "section": "Page 26",
+        "content": "ccess to high \nquality facilities and to higher education by brining \nyoung people to UEL ’s SportDock and engaging \nthem with sport and role models. \nIn 2024, over 1,683 children from 20 local schools \ntook part in the programme. This year, participants \nhad the opportunity to meet Olympic gold medallist \nChristine Ohuruogu MBE.\nUEL ’s Royal Docks School of Business and Law \ncontinued to provide services through its practice-\nbased centres: the Legal Advice Centre, used by \n360 local residents, T ax and Accountancy Clinic \nand Business Advice Centre. These centres offer \nfree legal, financial and business advice to the \nlocal community, empowering individuals with the \nknowledge and support they need to navigate \ncomplex issues.  \nUEL ’s outreach programmes \nin local schools, including \nsummer schools and access \nprograms, are also helping \nto break down barriers to \nhigher education. These \ninitiatives not only support \nlocal students but also \nstrengthen UEL ’s position \nas a critical partner in the \neducational and economic \ndevelopment of the region. \nCreating Place as both a Local Anchor and Global Gateway\n50 51\nAnnual Report 23/24",
+        "distance": 0.8354395627975464
+      },
+      {
+        "source_id": "Source 3",
+        "document": "uel_annual_report_2024_25.pdf",
+        "section": "Page 26",
+        "content": "eaningful \nimpact. This shortlisting affirms UEL’s role as \na national exemplar of how universities can \npartner locally and innovate globally.\nStart-up Profile: \nLodoland \nUEL and Newham \nPartnership \nShortlisted for \nNational AI Award\nA Global Gateway for Education,  \nInnovation and Opportunity\nIn 2024/2025, UEL strengthened our position as \na global gateway for education and innovation, \nexpanding international reach and impact. Now \namong the UK’s top providers of Transnational \nEducation (TNE), UEL’s global footprint grew \nthrough new partnerships and the success of \nestablished collaborations — uniting education, \nenterprise and research across continents.\nFor the first time, enrolments on UEL degrees \ndelivered with international partners surpassed \n26,000 students, including over 10,000 \nthrough our UNICAF partnership and 5,500 \nvia Metropolitan College in Greece — Europe’s \nlargest transnational education partnership.\nUEL’s ‘glocal anchor’ model, a cornerstone of \nVision 2028, continues to link local innovation \nwith global opportunity, advancing our goal to \nbe the UK’s leading careers-first university. \nThis year, the University deepened ties with key \nregions including",
+        "distance": 0.8637515902519226
+      }
+    ],
+    "answer": "# Strategic Intelligence Report\n\n## Executive Summary\nThis report analyses how the University of East London (UEL) describes and enacts its role as a local anchor institution, based on simulated institutional data spanning 2023-2025. UEL positions itself as an exempt charity operating under the Charities Act 2011 with a public benefit duty, focused on education, research, and extensive community engagement. Its strategic Vision 2028 advances a 'glocal anchor' model integrating local community support with global educational partnerships. UEL delivers varied practical local services—legal, financial, business advice—and outreach programmes targeting local youth participation in higher education. However, the current evidence has notable gaps in demonstrating measurable outcomes and socioeconomic impacts of these initiatives. This presents both strategic risks and opportunities in strengthening UEL’s local anchor identity and impact going forward.\n\n## Key Performance Findings\n- **Charitable Status and Public Benefit Orientation**  \n  UEL operates as an exempt charity under the Charities Act 2011, with educational and research delivery as core charitable objectives, governed with a public benefit duty [Source 1].\n\n- **Local Community Engagement**  \n  UEL engages actively with the local community through outreach programmes such as engaging 1,683 children from 20 local schools in sports activities, including events with Olympic role models [Source 2]. The university also runs practical service centres including a Legal Advice Centre serving 360 local residents, a Tax and Accountancy Clinic, and a Business Advice Centre offering free advice to empower local individuals [Source 2].\n\n- **Strategic ‘Glocal Anchor’ Positioning**  \n  The institution brands itself as a 'glocal anchor'—simultaneously embedding local innovation and development within Newham borough and establishing a global educational gateway through extensive transnational partnerships (over 26,000 international enrolments) [Source 3]. This is a central pillar of UEL’s Vision 2028 framework [Source 3].\n\n- **Local Economic and Educational Impact**  \n  Partnerships with local authorities (such as Newham) and local enterprise support mechanisms illustrate UEL’s role in driving economic growth and educational development, further strengthened by recognition like a national AI award shortlisting [Source 3].\n\n- **Education and Research Infrastructure**  \n  UEL's organizational structure includes five academic schools and four research institutes, alongside specialist departments that underpin community engagement and institutional governance [Source 1].\n\n## Strategic Risks\n- **Potential Dilution of Local Focus**  \n  The university’s expansion of global partnerships and transnational education programmes risks diverting resources and focus from local community priorities, potentially weakening local anchor efficacy [Source 3].\n\n- **Lack of Measurable Outcomes Data**  \n  Absence of robust measurement/reporting on social or economic impacts of community outreach or advisory services hinders transparent demonstration of value to stakeholders and may undermine funding or policy support [Sources 2, 3].\n\n- **Dependence on External Partnerships**  \n  The reliance on external partners for local engagement services introduces vulnerabilities should these collaborations weaken or funding be reduced, impacting service continuity [Inferred from community service models].\n\n## Strategic Opportunities\n- **Enhanced Integration of Global and Local Efforts**  \n  Leveraging the ‘glocal anchor’ strategy to develop community-embedded courses, research, and enterprise initiatives that fuse global innovation with local needs creates scope for greater socio-economic impact [Source 3].\n\n- **Impact Evaluation and Communication**  \n  Implementing systematic impact measurement frameworks for outreach and advisory services can reinforce UEL’s evidence base, improving internal governance and external funding and reputation [Infer from identified data gaps].\n\n- **Profile Building Through Recognized Achievements**  \n  Publicizing accolades such as the national AI award shortlisting and startup successes can elevate UEL’s status as both a local community leader and an innovative global university [Source 3].\n\n## Recommended Actions\n- **Develop Impact Assessment Frameworks**  \n  Establish comprehensive systems to collect, analyze, and report quantitative and qualitative data on the long-term outcomes of local engagement activities related to education progression, social wellbeing, and economic development.\n\n- **Strengthen Community Engagement Infrastructure**  \n  Increase targeted investment in staffing, facilities, and partnerships dedicated to local outreach programmes to ensure sustained and measurable benefits for local stakeholders.\n\n- **Foster Bidirectional Knowledge Exchange**  \n  Enhance mechanisms for mutual learning and resource flows between global partnerships and local initiatives, ensuring local students and communities tangibly benefit from international collaborations.\n\n- **Highlight Local Achievements in Communications**  \n  Amplify promotion of community engagement successes and local impact stories in institutional communications to reinforce UEL’s identity and reputation as a critical local anchor.\n\n## Evidence Gaps and Limitations\n- Quantitative data beyond participation counts (e.g., longitudinal outcomes, socio-economic impact metrics) for local outreach and advisory programmes is lacking, limiting assessment of wider impact.\n\n- No detailed qualitative evidence capturing local stakeholder perceptions or the societal value of UEL’s community services was available.\n\n- Limited granularity on the operational integration of local and global strategic priorities beyond overarching descriptions and select examples constrains full evaluation.\n\n- Evidence derives from partial extracts of annual reports; additional relevant institutional documents and evaluations may further clarify UEL’s anchor role.\n\n- Institutional data is simulated and may not reflect actual operational performance.\n\n## Sources\n- [Source 1] uel_annual_report_2024_25.pdf, Page 32 — UEL’s charitable status and institutional structure  \n- [Source 2] uel_annual_report_2023_24.pdf, Page 26 — Local outreach programmes and community service centres  \n- [Source 3] uel_annual_report_2024_25.pdf, Page 26 — Strategic ‘glocal anchor’ positioning, global partnerships, and AI award recognition",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null
+  },
+  {
+    "question_id": "Q09",
+    "question": "Where can student outcomes data be downloaded from the Office for Students?",
+    "system": "standalone",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0,
+    "generation_seconds": 1.828,
+    "total_seconds": 1.828,
+    "evidence": [],
+    "answer": "**Findings:**  \nStudent outcomes data can be downloaded from the Office for Students (OfS) website, typically within their \"Data and Analysis\" or \"Register and Key Data\" sections. The OfS provides various datasets on graduate employment, continuation rates, and qualification achievements.  \n\n**Limitations:**  \n- The availability and granularity of data may change over time.  \n- Some datasets might require account registration or acceptance of terms of use.  \n- Institution-specific outcome data might be aggregated or anonymized, limiting detailed analysis.  \n\n**Recommended Actions:**  \n- Visit the official OfS website and navigate to the \"Data and Analysis\" page.  \n- Check the \"Graduate Outcomes\" or related datasets for relevant student outcomes data.  \n- Review any accompanying metadata or documentation for dataset limitations.  \n- Contact OfS directly if specific or up-to-date institution-level data is required.  \n\n**Note:** Institution-specific accessibility or format of data downloads cannot be guaranteed without consulting the OfS site directly.",
+    "input_tokens": 73,
+    "output_tokens": 202,
+    "total_tokens": 275
+  },
+  {
+    "question_id": "Q09",
+    "question": "Where can student outcomes data be downloaded from the Office for Students?",
+    "system": "single_rag",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0.2131,
+    "generation_seconds": 3.1614,
+    "total_seconds": 3.3745,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "ofs_student_outcomes.html",
+        "section": "Webpage",
+        "content": "Student outcomes data dashboard Official statistics About the dashboard About the data dashboard Dashboard user guide Explore the dashboard Data dashboard Queries and feedback Data FAQs Get the data The indicators included in the student outcomes data dashboard are also available in a tabular format as Excel workbooks or CSV files. We have published the student outcomes data dashboard as official statistics . Excel files The Excel workbooks are split into two downloads corresponding to the different views of a provider’s student population. Each download contains one workbook for each provider. Taught or registered population for each provider (zipped) This is the view of a provider’s student population as shown on the overview page of the dashboard. Taught population for each provider (zipped) This view of a provider’s student population is accessible from the detailed view page of the dashboard. Partnership population for each provider (zipped) This view of a provider’s student population is accessible from the detailed view page of the dashboard. CSV files The CSV files are available in two formats: Download the CSV files for each provider (zipped) Download a single CSV file con",
+        "distance": 0.6192732453346252
+      },
+      {
+        "source_id": "Source 2",
+        "document": "ofs_student_outcomes.html",
+        "section": "Webpage",
+        "content": "refer to the data dashboard or the data downloads above for our most up-to-date information on student outcomes. July 2024 datafiles There are additional risks to data quality in some areas of the 2022-23 returns, but in general we consider the data is fit for purpose and facilitates robust measures of student outcomes and experiences. Excel files The Excel workbooks are split into two downloads corresponding to the different views of a provider’s student population. Each download contains one workbook for each provider. Taught or registered population for each provider (zipped) This is the view of a provider’s student population as shown on the overview page of the dashboard. Taught population for each provider (zipped) This view of a provider’s student population is accessible from the detailed view page of the dashboard. Partnership population for each provider (zipped) This view of a provider’s student population is accessible from the detailed view page of the dashboard. CSV files The CSV files are available in two formats: Download the CSV files for each provider (zipped) Download a single CSV file containing all providers (zipped) July 2023 datafiles Excel files The Excel w",
+        "distance": 0.704927921295166
+      },
+      {
+        "source_id": "Source 3",
+        "document": "ofs_student_outcomes.html",
+        "section": "Webpage",
+        "content": "he data from the apprenticeship completion taught table. CSV files The CSV files are available in two formats: Download the CSV files for each provider (zipped) Download a single CSV file containing all providers (zipped) April 2023 datafiles Excel files Taught or registered population for each provider (zipped) Taught population for each provider (zipped) CSV files Download the CSV files for each provider (zipped) Download a single CSV file containing all providers (zipped) September 2022 datafiles Excel files Download the Excel workbooks: Taught or registered population for each provider (zipped) Download the Excel workbooks: Taught population for each provider (zipped) CSV files Download the CSV files for each provider (zipped) Download a single CSV file containing all providers (zipped) Published 30 September 2022 Last updated 05 February 2026 + show all updates 05 February 2026 The data has been updated after an error was identified in the calculation of the standard error for the difference from benchmark estimates. This led to the estimates being too low in the previous version of this release. 24 September 2025 When we updated the student outcomes release on 21 August 2025,",
+        "distance": 0.8416775465011597
+      }
+    ],
+    "answer": "Findings:\n- Student outcomes data from the Office for Students (OfS) can be downloaded in Excel workbooks or CSV file formats. (Source 1)\n- Excel workbooks come in downloads corresponding to different views of a provider’s student population: taught or registered population, taught population, and partnership population. These are available as zipped files for each provider. (Sources 1, 2, 3)\n- CSV files can be downloaded either as individual zipped files for each provider or as a single zipped CSV file containing all providers. (Sources 1, 2, 3)\n- The data dashboard provides the most up-to-date student outcomes data, including official statistics. (Sources 1, 2)\n- Data files are updated periodically, for example referencing July 2024, July 2023, April 2023, and September 2022 releases. (Sources 2, 3)\n\nLimitations:\n- There is mention of additional risks to data quality in some areas of 2022-23 returns, though overall the data is considered fit for purpose. (Source 2)\n- The exact URL or direct download link for the student outcomes data is not provided in the evidence.\n- The evidence excerpts focus on file formats and update frequency but do not describe the user interface or navigation steps in detail.\n\nRecommended actions:\n1. Access the OfS student outcomes data dashboard webpage to download data; look for the \"Get the data\" section to find Excel and CSV download options per provider or all combined. (Source 1)\n2. Utilize the zipped Excel workbooks or CSV files according to needed views of student populations (taught, registered, partnership). (Sources 1, 2, 3)\n3. Review data quality notes especially for 2022-23 data before use, as some caution is advised. (Source 2)\n4. Monitor the dashboard for latest data releases, as updates occur periodically (e.g., annually). (Sources 2, 3)\n\nThese recommendations are based solely on information provided in the evidence and do not assume availability of specific URLs or platform access details.",
+    "input_tokens": 820,
+    "output_tokens": 432,
+    "total_tokens": 1252
+  },
+  {
+    "question_id": "Q09",
+    "question": "Where can student outcomes data be downloaded from the Office for Students?",
+    "system": "multi_agent",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0.2131,
+    "generation_seconds": 13.2337,
+    "total_seconds": 13.4468,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "ofs_student_outcomes.html",
+        "section": "Webpage",
+        "content": "Student outcomes data dashboard Official statistics About the dashboard About the data dashboard Dashboard user guide Explore the dashboard Data dashboard Queries and feedback Data FAQs Get the data The indicators included in the student outcomes data dashboard are also available in a tabular format as Excel workbooks or CSV files. We have published the student outcomes data dashboard as official statistics . Excel files The Excel workbooks are split into two downloads corresponding to the different views of a provider’s student population. Each download contains one workbook for each provider. Taught or registered population for each provider (zipped) This is the view of a provider’s student population as shown on the overview page of the dashboard. Taught population for each provider (zipped) This view of a provider’s student population is accessible from the detailed view page of the dashboard. Partnership population for each provider (zipped) This view of a provider’s student population is accessible from the detailed view page of the dashboard. CSV files The CSV files are available in two formats: Download the CSV files for each provider (zipped) Download a single CSV file con",
+        "distance": 0.6192732453346252
+      },
+      {
+        "source_id": "Source 2",
+        "document": "ofs_student_outcomes.html",
+        "section": "Webpage",
+        "content": "refer to the data dashboard or the data downloads above for our most up-to-date information on student outcomes. July 2024 datafiles There are additional risks to data quality in some areas of the 2022-23 returns, but in general we consider the data is fit for purpose and facilitates robust measures of student outcomes and experiences. Excel files The Excel workbooks are split into two downloads corresponding to the different views of a provider’s student population. Each download contains one workbook for each provider. Taught or registered population for each provider (zipped) This is the view of a provider’s student population as shown on the overview page of the dashboard. Taught population for each provider (zipped) This view of a provider’s student population is accessible from the detailed view page of the dashboard. Partnership population for each provider (zipped) This view of a provider’s student population is accessible from the detailed view page of the dashboard. CSV files The CSV files are available in two formats: Download the CSV files for each provider (zipped) Download a single CSV file containing all providers (zipped) July 2023 datafiles Excel files The Excel w",
+        "distance": 0.704927921295166
+      },
+      {
+        "source_id": "Source 3",
+        "document": "ofs_student_outcomes.html",
+        "section": "Webpage",
+        "content": "he data from the apprenticeship completion taught table. CSV files The CSV files are available in two formats: Download the CSV files for each provider (zipped) Download a single CSV file containing all providers (zipped) April 2023 datafiles Excel files Taught or registered population for each provider (zipped) Taught population for each provider (zipped) CSV files Download the CSV files for each provider (zipped) Download a single CSV file containing all providers (zipped) September 2022 datafiles Excel files Download the Excel workbooks: Taught or registered population for each provider (zipped) Download the Excel workbooks: Taught population for each provider (zipped) CSV files Download the CSV files for each provider (zipped) Download a single CSV file containing all providers (zipped) Published 30 September 2022 Last updated 05 February 2026 + show all updates 05 February 2026 The data has been updated after an error was identified in the calculation of the standard error for the difference from benchmark estimates. This led to the estimates being too low in the previous version of this release. 24 September 2025 When we updated the student outcomes release on 21 August 2025,",
+        "distance": 0.8416775465011597
+      }
+    ],
+    "answer": "# Strategic Intelligence Report\n\n## Executive Summary\nThis report evaluates the availability and characteristics of student outcomes data published by the Office for Students (OfS). The OfS provides robust, regularly updated student outcomes datasets accessible through a dashboard with downloadable Excel and CSV file formats. These data are organized by higher education provider and segmented by student population type (taught, registered, and partnership populations). While some data quality concerns exist for certain reporting periods, the overall data are suitable for informed institutional analysis and strategic planning. Institutions are advised to leverage these resources proactively and maintain awareness of updates and corrections to ensure accuracy.\n\n*Note: This report is based on simulated institutional data.*\n\n## Key Performance Findings\n- The OfS student outcomes data are available via an online dashboard and downloadable as official statistical releases in both Excel and CSV formats [Source 1].\n- Data files are organized by provider and segmented into views of the student population: taught or registered population, taught population, and partnership population. Each segment is available as a zipped Excel workbook per provider [Sources 1, 2, 3].\n- CSV files are available either individually zipped by provider or as a single zipped file containing all providers, facilitating different user needs [Sources 1, 2, 3].\n- The datasets cover multiple reporting periods, including July 2024, April 2023, and September 2022, illustrating a commitment to regular updates and error corrections (notably in February 2026 updates related to calculation errors) to enhance data quality and reliability [Sources 2, 3].\n- Despite some elevated data quality risks noted for the 2022–23 returns, the data supports robust measurement of student outcomes and experiences, underscoring its general fitness for purpose [Source 2].\n- The OfS actively manages transparency and data integrity by publicly documenting corrections and updates [Source 3].\n\n## Strategic Risks\n- Historical data quality issues in some reporting periods (e.g., 2022–23) present a risk to the validity of analyses if institutional users do not account for these limitations [Source 2].\n- The reliance on periodic data releases requires institutions to monitor the OfS data update schedule closely; failure to use the most current dataset could lead to decisions based on outdated or corrected data [Source 3].\n\n## Strategic Opportunities\n- Availability of disaggregated datasets by student population type enables tailored analysis aligned with institutional strategic priorities and diverse student cohorts.\n- Multiple file formats (Excel and CSV) enhance compatibility with a range of analytics platforms, facilitating deeper and more flexible data interrogation.\n- The OfS’s transparent documentation of data corrections and update history promotes institutional trust and accountability.\n\n## Recommended Actions\n- Institutions should regularly access the OfS student outcomes dashboard to download the latest Excel or CSV data files, ensuring use of current and corrected datasets.\n- Develop or update internal data workflows to integrate periodic OfS data releases seamlessly, including procedures for identifying and applying corrections.\n- Utilize the segmented datasets (taught, registered, partnership) for focused analysis on specific student populations relevant to institutional objectives.\n- Implement quality assurance protocols to cross-check data from higher-risk periods and contextualize findings to mitigate the impact of any residual data quality issues.\n\n## Evidence Gaps and Limitations\n- The precise URLs or direct download links for the datasets are not specified within the evidence, potentially posing a minor barrier to locating files.\n- There is no detailed breakdown of dataset granularity, variables, or metadata provided, limiting the ability to assess data completeness fully.\n- Information on the notification mechanisms or schedules for data updates is lacking, limiting insight into how users are alerted to changes.\n- No user experience or feedback data concerning the dashboard’s accessibility or usability were available, meaning the effectiveness of the data dissemination platform cannot be evaluated.\n\n## Sources\n- [Source 1] Document: ofs_student_outcomes.html, Section: Webpage – Overview on data dashboard format and download options.\n- [Source 2] Document: ofs_student_outcomes.html, Section: Webpage – Data quality assessment and file format details for July 2024 data.\n- [Source 3] Document: ofs_student_outcomes.html, Section: Webpage – File formats and updates history including error corrections (February 2026).\n\n---\n\n*This report uses simulated institutional data from the Office for Students student outcomes resources and reflects evidence as of latest update documented in the sources above.*",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null
+  },
+  {
+    "question_id": "Q10",
+    "question": "What is the reported first-year undergraduate retention rate?",
+    "system": "standalone",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0,
+    "generation_seconds": 1.6851,
+    "total_seconds": 1.6851,
+    "evidence": [],
+    "answer": "Findings:  \n- The reported first-year undergraduate retention rate refers to the percentage of first-year students who continue to enroll at the institution in their second year.\n\nLimitations:  \n- No institution-specific data or exact figure for the first-year undergraduate retention rate is provided in the prompt.  \n- Retention rates can vary significantly by institution, program, demographics, and reporting period.  \n- Without specific data, no accurate or current conclusion can be drawn.\n\nRecommended Actions:  \n- Obtain the most recent and institution-specific first-year undergraduate retention rate data from the registrar or institutional research office.  \n- Compare with peer institutions and national averages to assess relative performance.  \n- Analyze factors influencing retention to inform targeted retention strategies.\n\nSummary:  \nNo exact first-year undergraduate retention rate is reported in the provided information. Data collection is necessary for informed decision-making.",
+    "input_tokens": 70,
+    "output_tokens": 170,
+    "total_tokens": 240
+  },
+  {
+    "question_id": "Q10",
+    "question": "What is the reported first-year undergraduate retention rate?",
+    "system": "single_rag",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0.1971,
+    "generation_seconds": 2.9233,
+    "total_seconds": 3.1204,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "institutional_performance.txt",
+        "section": "STUDENT RETENTION",
+        "content": "STUDENT RETENTION\nOverall student retention rate: 84%.\nPrevious year retention rate: 87%.\nInstitutional retention target: 90%.\nRetention among first-year undergraduate students: 79%.\nRetention among postgraduate taught students: 91%.",
+        "distance": 0.5065134167671204
+      },
+      {
+        "source_id": "Source 2",
+        "document": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "content": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Education\nLevel: Undergraduate\nRetention Rate: 87\nTarget: 90",
+        "distance": 0.5682838559150696
+      },
+      {
+        "source_id": "Source 3",
+        "document": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "content": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Health\nLevel: Undergraduate\nRetention Rate: 86\nTarget: 90",
+        "distance": 0.573110044002533
+      }
+    ],
+    "answer": "Findings:\n- The overall first-year undergraduate retention rate is reported as 79% (Source 1).\n- For the 2024/25 academic year, retention rates for first-year undergraduates vary by school: Education reports 87% and Health reports 86% (Sources 2 and 3).\n- The institutional retention target for undergraduates is 90% overall and for individual schools (Sources 1, 2, 3).\n\nLimitations:\n- Source 1 provides a general institutional figure for first-year undergraduate retention (79%) without specifying academic year or school.\n- Sources 2 and 3 provide more recent, school-specific retention rates for 2024/25 that are higher than the general figure in Source 1, but do not specify if these are first-year retention rates or overall undergraduate retention rates.\n- There is no explicit confirmation that the 87% and 86% rates from Sources 2 and 3 represent first-year retention, only that they are undergraduate retention rates.\n- No retention data for other schools or disaggregated by other subgroups are provided.\n\nRecommended Actions:\n- Clarify whether the 87% and 86% rates for Education and Health schools are specifically first-year undergraduate retention rates.\n- Investigate reasons for the discrepancy between the institutional first-year undergraduate retention rate (79%) and the higher retained rates reported by two schools.\n- Collect more recent and school-wide data on first-year undergraduate retention to identify trends and areas needing support.\n- Align institutional retention targets with realistic, data-supported goals for each school.\n- Develop targeted interventions to improve first-year retention, especially if the 79% figure reflects the broader institutional average.\n\nEvidence Summary:\n- Institutional first-year undergraduate retention: 79% (Source 1)\n- Education school undergraduate retention (possibly first-year): 87% (Source 2)\n- Health school undergraduate retention (possibly first-year): 86% (Source 3)\n- Target retention rate: 90% (Sources 1, 2, 3)",
+    "input_tokens": 232,
+    "output_tokens": 412,
+    "total_tokens": 644
+  },
+  {
+    "question_id": "Q10",
+    "question": "What is the reported first-year undergraduate retention rate?",
+    "system": "multi_agent",
+    "model": "gpt-4.1-mini",
+    "top_k": 3,
+    "status": "ok",
+    "error": "",
+    "retrieval_seconds": 0.1971,
+    "generation_seconds": 10.7407,
+    "total_seconds": 10.9378,
+    "evidence": [
+      {
+        "source_id": "Source 1",
+        "document": "institutional_performance.txt",
+        "section": "STUDENT RETENTION",
+        "content": "STUDENT RETENTION\nOverall student retention rate: 84%.\nPrevious year retention rate: 87%.\nInstitutional retention target: 90%.\nRetention among first-year undergraduate students: 79%.\nRetention among postgraduate taught students: 91%.",
+        "distance": 0.5065134167671204
+      },
+      {
+        "source_id": "Source 2",
+        "document": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "content": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Education\nLevel: Undergraduate\nRetention Rate: 87\nTarget: 90",
+        "distance": 0.5682838559150696
+      },
+      {
+        "source_id": "Source 3",
+        "document": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "content": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Health\nLevel: Undergraduate\nRetention Rate: 86\nTarget: 90",
+        "distance": 0.573110044002533
+      }
+    ],
+    "answer": "# Strategic Intelligence Report\n\n## Executive Summary  \nThis report addresses the question of the reported first-year undergraduate retention rate at the institution using simulated institutional data. The first-year undergraduate retention rate is currently 79%, falling short of the institutional target of 90%. This underperformance represents an 11 percentage point gap and contributes to a broader trend of declining overall student retention. School-level data from Education and Health schools show better retention rates (87% and 86%, respectively) but still do not meet the target. The report outlines associated strategic risks, opportunities for improvement, and recommended actions, while acknowledging existing evidence gaps and limitations.\n\n## Key Performance Findings  \n- The first-year undergraduate retention rate is 79%, below the institutional target of 90% by 11 percentage points [Source 1].  \n- The overall student retention rate is 84%, a decline from 87% the previous year, indicating a downward trend [Source 1].  \n- Undergraduate retention rates in Education and Health schools are reported at 87% and 86%, respectively, both close but below the 90% target [Sources 2, 3].  \n- Postgraduate taught student retention is notably higher at 91%, exceeding the target [Source 1].  \n\n## Strategic Risks  \n- Failure to meet retention targets for first-year undergraduates may damage institutional reputation, affect funding allocations, and compromise student success outcomes.  \n- Uneven retention performance among schools suggests inconsistent student support and experiences, potentially leading to disparities and institutional fragmentation.  \n- The downward trend in overall retention signals possible systemic challenges in student engagement, experience, or satisfaction that require urgent evaluation.  \n\n## Strategic Opportunities  \n- Focused interventions on first-year undergraduate students could directly address the largest retention gap and improve institutional outcomes.  \n- Best practices from higher-performing schools like Education and Health offer models to enhance retention efforts across other faculties.  \n- Utilizing detailed student data segmented by year, school, and program level presents an opportunity to customize support and improve retention robustness.  \n\n## Recommended Actions  \n- Undertake a comprehensive analysis to diagnose underlying causes of first-year undergraduate attrition.  \n- Develop and deploy enhanced orientation programs, academic advising, and support services specifically targeting first-year students.  \n- Benchmark and transfer successful retention strategies from schools with higher rates (e.g., Education and Health) to underperforming areas.  \n- Establish regular monitoring of retention metrics at the school and program level to detect early warning signs and enable swift responses.  \n\n## Evidence Gaps and Limitations  \n- Retention data broken down beyond first-year cohorts is unavailable, limiting insight into attrition patterns in subsequent years.  \n- Data is only available for Education and Health schools at the undergraduate level; retention performance for other schools remains unknown.  \n- The methodological definition and calculation of retention rates (e.g., cohort timeframe, exclusion criteria) are not specified, potentially affecting data comparability and interpretation.  \n- Absence of qualitative data such as student feedback limits understanding of the causes behind retention challenges and the contextual factors affecting student persistence.  \n\n## Sources  \n- [Source 1] institutional_performance.txt, Section: STUDENT RETENTION  \n- [Source 2] institutional_performance.xlsx, Worksheet: Student Retention, Academic Year: 2024/25, School: Education  \n- [Source 3] institutional_performance.xlsx, Worksheet: Student Retention, Academic Year: 2024/25, School: Health  \n\n*Note: This report is based on simulated institutional data and should be interpreted accordingly.*",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null
+  }
+]

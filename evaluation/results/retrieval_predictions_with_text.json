@@ -1,0 +1,822 @@
+[
+  {
+    "question_id": "Q01",
+    "question": "What is the overall student retention rate?",
+    "expected_source_provisional": "institutional_performance.txt",
+    "expected_section_provisional": "STUDENT RETENTION",
+    "label_status": "provisional",
+    "latency_seconds": 2.6547,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "institutional_performance.txt",
+        "section": "STUDENT RETENTION",
+        "page_number": 0,
+        "row_number": 0,
+        "distance": 0.3866196572780609,
+        "text": "STUDENT RETENTION\nOverall student retention rate: 84%.\nPrevious year retention rate: 87%.\nInstitutional retention target: 90%.\nRetention among first-year undergraduate students: 79%.\nRetention among postgraduate taught students: 91%."
+      },
+      {
+        "rank": 2,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 7,
+        "distance": 0.5471023321151733,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Education\nLevel: Undergraduate\nRetention Rate: 87\nTarget: 90"
+      },
+      {
+        "rank": 3,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 9,
+        "distance": 0.582404375076294,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Health\nLevel: Undergraduate\nRetention Rate: 86\nTarget: 90"
+      },
+      {
+        "rank": 4,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 6,
+        "distance": 0.5862512588500977,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2023/24\nSchool: Education\nLevel: Undergraduate\nRetention Rate: 90\nTarget: 90"
+      },
+      {
+        "rank": 5,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 3,
+        "distance": 0.587039053440094,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Business\nLevel: Undergraduate\nRetention Rate: 82\nTarget: 90"
+      },
+      {
+        "rank": 6,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 2,
+        "distance": 0.597931981086731,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2023/24\nSchool: Business\nLevel: Undergraduate\nRetention Rate: 85\nTarget: 90"
+      },
+      {
+        "rank": 7,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 8,
+        "distance": 0.5995358824729919,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2023/24\nSchool: Health\nLevel: Undergraduate\nRetention Rate: 89\nTarget: 90"
+      },
+      {
+        "rank": 8,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 5,
+        "distance": 0.6091314554214478,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Computing\nLevel: Undergraduate\nRetention Rate: 84\nTarget: 90"
+      }
+    ]
+  },
+  {
+    "question_id": "Q02",
+    "question": "What was the previous year retention rate and what is the institutional target?",
+    "expected_source_provisional": "institutional_performance.txt",
+    "expected_section_provisional": "STUDENT RETENTION",
+    "label_status": "provisional",
+    "latency_seconds": 0.3376,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "institutional_performance.txt",
+        "section": "STUDENT RETENTION",
+        "page_number": 0,
+        "row_number": 0,
+        "distance": 0.6085466146469116,
+        "text": "STUDENT RETENTION\nOverall student retention rate: 84%.\nPrevious year retention rate: 87%.\nInstitutional retention target: 90%.\nRetention among first-year undergraduate students: 79%.\nRetention among postgraduate taught students: 91%."
+      },
+      {
+        "rank": 2,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 3,
+        "distance": 0.6750513315200806,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Business\nLevel: Undergraduate\nRetention Rate: 82\nTarget: 90"
+      },
+      {
+        "rank": 3,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 2,
+        "distance": 0.6851171255111694,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2023/24\nSchool: Business\nLevel: Undergraduate\nRetention Rate: 85\nTarget: 90"
+      },
+      {
+        "rank": 4,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 7,
+        "distance": 0.6883505582809448,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Education\nLevel: Undergraduate\nRetention Rate: 87\nTarget: 90"
+      },
+      {
+        "rank": 5,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 9,
+        "distance": 0.7101479768753052,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Health\nLevel: Undergraduate\nRetention Rate: 86\nTarget: 90"
+      },
+      {
+        "rank": 6,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 6,
+        "distance": 0.7229474782943726,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2023/24\nSchool: Education\nLevel: Undergraduate\nRetention Rate: 90\nTarget: 90"
+      },
+      {
+        "rank": 7,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 8,
+        "distance": 0.7325680255889893,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2023/24\nSchool: Health\nLevel: Undergraduate\nRetention Rate: 89\nTarget: 90"
+      },
+      {
+        "rank": 8,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 5,
+        "distance": 0.7805942296981812,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Computing\nLevel: Undergraduate\nRetention Rate: 84\nTarget: 90"
+      }
+    ]
+  },
+  {
+    "question_id": "Q03",
+    "question": "What are the institutional strategic priorities?",
+    "expected_source_provisional": "institutional_performance.txt",
+    "expected_section_provisional": "STRATEGIC PRIORITIES",
+    "label_status": "provisional",
+    "latency_seconds": 0.2598,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 52",
+        "page_number": 52,
+        "row_number": 0,
+        "distance": 0.9444906711578369,
+        "text": "future development. \nThe Board has primary responsibility for all the affairs of the institution, including setting its \ngeneral strategic direction as follows: \nCorporate Governance\n1. To set, and agree, the mission, strategic vision, and values of the institution, with the \nUniversity Executive Board. \n2. To agree long-term academic and business plans and key performance indicators and \nensure that these meet the interests of stakeholders, especially staff and current and \nfuture students.\n3. To ensure that processes are in place to monitor and evaluate the performance and \neffectiveness of the institution against the strategy, plans and approved key performance \nindicators, which should be, where possible and appropriate, benchmarked against other \ncomparable institutions. \n4. Where the Board of Governors choose to delegate authority to the Vice Chancellor \nand President for the academic, corporate, financial, estate and human resource \nmanagement of the institution, to establish and keep under regular review the policies, \nprocedures and limits within such management functions as shall be undertaken by and \nunder the authority of the head of the institution.\n5. To ensure the es"
+      },
+      {
+        "rank": 2,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 55",
+        "page_number": 55,
+        "row_number": 0,
+        "distance": 1.0299409627914429,
+        "text": "Whilst not a company, the principles of section 172 of the Companies Act 2006 are being \nfollowed. Governors both individually and collectively, act in the way that they consider, in \ngood faith, would most likely promote the success of the University for the benefit of its \nmembers as a whole, and in doing so the Governors have regard (amongst other matters) to \nthe:  \n – likely consequences of any decisions in the interests of both customers and colleagues, \n – need to foster the University’s business relationships with suppliers, customers, and other \nkey stakeholders, \n – impact of the University’s operations on communities and the environment, \n – desirability of the University in maintaining a reputation for high standards of business \nconduct, and \n – the need to act fairly as between members of the University. \nThe Board of Governors consider the potential consequences of its decisions on its key \nstakeholders, taking into account a wide range of factors. The Board believes that the \nUniversity will be successful by having regard to the views and needs of its wide-ranging \nstakeholders. The University seeks to engage with stakeholders and receive feedback in a \nvariety of w"
+      },
+      {
+        "rank": 3,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 55",
+        "page_number": 55,
+        "row_number": 0,
+        "distance": 1.0385518074035645,
+        "text": "s to identify the principal risks to the delivery of our policies, aims and objectives, to \nevaluate the nature and extent of those risks and to ensure they are managed. This process \nhas been in place for the year ended 31 July 2024 and up to the date of approval of the \nfinancial statements, the key elements of which are as follows:  \n – the Board meets at least five times in the year to consider the strategic direction \nand plans of the University and to monitor performance against those plans using Key \nPerformance Indicators; \n – there is clear definition of the responsibilities of, and authority delegated to, committees \nof the Board and the executive; \n – the University’s 10-year strategic plan – Vision 2028, adopted by the Board in January \n2019, sets the framework of strategic aims and objectives against which risks are \nassessed and performance is monitored and reported;  \n – a University Risk Register which assesses key risks at institutional level, is maintained and \nis reviewed regularly by the University Executive Board and other senior staff as required;\n – all Schools and Services have risk registers, which are tested during the annual planning \nround, as well as fo"
+      },
+      {
+        "rank": 4,
+        "source": "institutional_performance.txt",
+        "section": "STRATEGIC PRIORITIES",
+        "page_number": 0,
+        "row_number": 0,
+        "distance": 1.0394763946533203,
+        "text": "STRATEGIC PRIORITIES\n1. Improve student retention to 90%.\n2. Increase student satisfaction to 85%.\n3. Strengthen financial sustainability.\n4. Improve student academic support services.\n5. Expand data-informed strategic planning.\nEND OF SIMULATED REPORT"
+      },
+      {
+        "rank": 5,
+        "source": "institutional_performance.txt",
+        "section": "DOCUMENT INFORMATION",
+        "page_number": 0,
+        "row_number": 0,
+        "distance": 1.0569897890090942,
+        "text": "SIMULATED INSTITUTIONAL PERFORMANCE REPORT\nInstitution: Example Metropolitan University\nReporting Period: 2024/25\nIMPORTANT: All figures below are fictional and created\nsolely for testing the HE Strategic Intelligence prototype."
+      },
+      {
+        "rank": 6,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 41",
+        "page_number": 41,
+        "row_number": 0,
+        "distance": 1.0783883333206177,
+        "text": "the Governors have regard \n(amongst other matters) to the: \n• Likely consequences of any decisions in the \ninterests of both customers and colleagues, \n• Need to foster the University’s business \nrelationships with suppliers, customers, and \nother key stakeholders, \n• Impact of the University’s operations on \ncommunities and the environment, \n• Desirability of the University in maintaining \na reputation for high standards of business \nconduct, and \n• The need to act fairly as between members \nof the University. \nThe Board of Governors consider the potential \nconsequences of its decisions on its key \nstakeholders, taking into account a wide range of \nfactors. The Board believes that the University \nwill be successful by having regard to the views \nand needs of its wide-ranging stakeholders. The \nUniversity seeks to engage with stakeholders and \nreceive feedback in a variety of ways including \na range of staff and student fora/meetings, \nsurveys, consultations, participation in external \nnetworks, alumni networks, engagement with \npolicymakers, research partnerships and \ninput into decision-making through committee \nmemberships. \nDecisions made by the Board are informed by the \nUniv"
+      },
+      {
+        "rank": 7,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 55",
+        "page_number": 55,
+        "row_number": 0,
+        "distance": 1.122302770614624,
+        "text": "t \nat the end of the Annual Report. The Board has been able to balance the needs of the \nUniversity’s many stakeholders in considering this wide range of strategic matters.\nAs the governing body of the University of East London, the Board of Governors has \nresponsibility for maintaining a sound system of internal control in support of its policies, \naims and objectives. In so doing it has a responsibility to safeguard the public and other \nfunds for which it is responsible, in accordance with the duties assigned to the Board of \nGovernors in the Articles of Government and terms and conditions of funding for higher \neducation institutions with the OfS up to 31 July 2024 including its regulatory framework. \nThe system of internal control is designed to understand and manage, rather than eliminate, \nthe risk of non-achievement of policies, aims and objectives; it can therefore only provide \nonly a reasonable and not an absolute assurance of effectiveness. It is based on an ongoing \nprocess to identify the principal risks to the delivery of our policies, aims and objectives, to \nevaluate the nature and extent of those risks and to ensure they are managed. This process \nhas been in plac"
+      },
+      {
+        "rank": 8,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 54",
+        "page_number": 54,
+        "row_number": 0,
+        "distance": 1.149242639541626,
+        "text": "influence upon the development of institutional strategy, academic quality, the identification \nand planning of new developments and the shaping of the institutional ethos. Under the \nterms of the OfS regulatory framework, the Vice-Chancellor and President is the designated \nAccountable Officer of the institution and in that capacity can be summoned to appear \nbefore the Public Accounts Committee of the House of Commons. \nThe Vice-Chancellor and President is supported by the University Executive Board, which \nin 2023/24 consisted of the Provost, the Deputy Vice-Chancellor and Chief Finance Officer, \nthe Pro-Vice-Chancellor (Education and Experience), the Pro-Vice-Chancellor (Impact and \nInnovation), the Pro-Vice-Chancellor (Careers and Enterprise), the Chief Marketing Officer, \nthe Chief Student Officer, and the University Secretary. The University Executive Board \n(UEB) works together with the University Management Board on executive and operational \nmanagement. \nThe Provost is responsible for the management of the academic affairs of the University, \nwhile the professional and support services are managed by the Deputy Vice-Chancellor and \nChief Finance Officer, the Chief Marketi"
+      }
+    ]
+  },
+  {
+    "question_id": "Q04",
+    "question": "How does undergraduate retention vary by school?",
+    "expected_source_provisional": "institutional_performance.xlsx",
+    "expected_section_provisional": "Student Retention",
+    "label_status": "provisional",
+    "latency_seconds": 0.2717,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "institutional_performance.txt",
+        "section": "STUDENT RETENTION",
+        "page_number": 0,
+        "row_number": 0,
+        "distance": 0.513418972492218,
+        "text": "STUDENT RETENTION\nOverall student retention rate: 84%.\nPrevious year retention rate: 87%.\nInstitutional retention target: 90%.\nRetention among first-year undergraduate students: 79%.\nRetention among postgraduate taught students: 91%."
+      },
+      {
+        "rank": 2,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 6,
+        "distance": 0.6930443644523621,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2023/24\nSchool: Education\nLevel: Undergraduate\nRetention Rate: 90\nTarget: 90"
+      },
+      {
+        "rank": 3,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 7,
+        "distance": 0.6975023746490479,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Education\nLevel: Undergraduate\nRetention Rate: 87\nTarget: 90"
+      },
+      {
+        "rank": 4,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 9,
+        "distance": 0.7184411883354187,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Health\nLevel: Undergraduate\nRetention Rate: 86\nTarget: 90"
+      },
+      {
+        "rank": 5,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 8,
+        "distance": 0.7190441489219666,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2023/24\nSchool: Health\nLevel: Undergraduate\nRetention Rate: 89\nTarget: 90"
+      },
+      {
+        "rank": 6,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 2,
+        "distance": 0.7234808206558228,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2023/24\nSchool: Business\nLevel: Undergraduate\nRetention Rate: 85\nTarget: 90"
+      },
+      {
+        "rank": 7,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 3,
+        "distance": 0.7260468602180481,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Business\nLevel: Undergraduate\nRetention Rate: 82\nTarget: 90"
+      },
+      {
+        "rank": 8,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 4,
+        "distance": 0.7735385894775391,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2023/24\nSchool: Computing\nLevel: Undergraduate\nRetention Rate: 88\nTarget: 90"
+      }
+    ]
+  },
+  {
+    "question_id": "Q05",
+    "question": "What does UEL say about its careers-first strategy?",
+    "expected_source_provisional": "uel_annual_report_2024_25.pdf",
+    "expected_section_provisional": "",
+    "label_status": "provisional",
+    "latency_seconds": 0.221,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 25",
+        "page_number": 25,
+        "row_number": 0,
+        "distance": 0.691372811794281,
+        "text": "ape.\nUEL is now the UK’s largest, fastest mover in \nnew business growth, ranked 2nd in the UK for \nstudent start-ups, having surged from 90th in \njust a few years (HESA 2025). Even more remark-\nably, the number of UEL-backed firms still trading \nafter three years has increased by over 1,000%.\nThis achievement reflects the University’s \ncommitment to ensuring that students from all \nbackgrounds see entrepreneurship as a viable \ncareer path. Students are 24 per cent more \nlikely than peers nationally to consider starting a \nbusiness (Graduate Outcomes Survey, 2025), and \nthis is translating into sustainable growth. Since \nthe launch of Vision 2028, the number of active \nfirms has risen by more than 1,000%, with 668 \nbusinesses surviving and thriving in the latest \nfigures (HESA, 2025). \nOn average, UEL supports over 150 new \nbusinesses each year, with growth continuing  \nto accelerate even as the wider sector slows \n(HESA, 2025). \nConfidence in career prospects is 9.4 per \ncent above the sector average, showing UEL \ngraduates are equipped to lead in the future \neconomy. (National Student Survey, 2025). \nThese accolades confirm UEL’s reputation as \na new engine of inclusive enterprise"
+      },
+      {
+        "rank": 2,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 22",
+        "page_number": 22,
+        "row_number": 0,
+        "distance": 0.7253900766372681,
+        "text": "livering measurable results.\nUnderpinning this rise is UEL’s Careers \nGuarantee, which commits every student to work- \nrelated learning from the outset. The rise is also \nsupported by our Mental Wealth & Professional \nFitness curriculum, enhanced employer engage-\nment, and embedded enterprise opportunities. \nUEL outperformed many peer institutions in \nnarrowing graduate outcome gaps and driving \nsocial mobility.\nThis recognition underscores UEL’s growing \nreputation for turning ambition into opportunity \nand reinforces our strategic goals under Vision \n2028. It is a testament to the dedication of \nstaff, partners, and students, and reinforces our \nmission to make inclusive, high-impact careers \naccessible to all.\n43\n42\n2024–2025  ANNUAL REPORT"
+      },
+      {
+        "rank": 3,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 18",
+        "page_number": 18,
+        "row_number": 0,
+        "distance": 0.7505295276641846,
+        "text": "rt-up, and mentoring \nvia the UEL Founders Network. The Founders Network allows UEL \nstudents and graduates to share experiences, get support, and learn from \nmore experienced entrepreneurs within the University community. UEL \nstudents and graduate entrepreneurs who join the network can connect \nwith like-minded founders, celebrate business goals and learn from \nexperienced individuals.\n“BACK:ED is not just about \nhaving the best products/services \nor the most innovative ideas; it's \nabout cultivating a relentless \nfocus on nurturing results for our \nstudents, embedding a culture of \ncollaboration, and maintaining \nthe agility to adapt in an ever-\nchanging landscape”\nVonley Joseph\nUEL Student Enterprise Manager\nIn the past five years,  \nUEL has helped support\nWhat do UEL students \ndo after graduating?\nOver\n10%\nof our graduates in work are employed by \nTimes 100 companies, including Apple, \nAccenture, Clifford Chance, NHS, Civil Service \nand local government\nOver\n33%\nOur graduates deeply care \nabout their communities –\nwork in health \nprofessions or enter \nthe education sector. \n7%\nMany UEL graduates are \nentrepreneurial, with \nstarting their own \nbusinesses within a \nyear of gradu"
+      },
+      {
+        "rank": 4,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 17",
+        "page_number": 17,
+        "row_number": 0,
+        "distance": 0.7614243626594543,
+        "text": "“The 2024 NSS results reflect \nthe tangible progress we are \nmaking in preparing our students \nfor future opportunities. This \nachievement underscores UEL ’s \nstrategic commitment to delivering \na transformative, careers-focused \neducational experience. Our \nstrategy, grounded in inclusivity and \ninnovation, is designed to ensure \nthat UEL remains a future-ready \ninstitution.” \nProfessor Amanda Broderick \nVice-Chancellor and President\nBuilding a Careers-First \nUniversity\nUEL continued to progress towards its ambition of becoming the UK’s leading \ncareers-first university through the strategic implementation of innovative \ncurriculum and extracurricular programmes. \nIn 2024, the University launched our Careers Guarantee, a comprehensive \ncommitment to ensure that students transition smoothly from education to \nemployment. To ensure our students are ready for the workforce, we provide them \nwith real-world experience, including resources such as work placements, networking \nopportunities, and 18 months of extended careers support after graduation. \nWe also launched our Graduate Success Centre. This is a dedicated service aimed at \ncontinuing our relationship with students and providi"
+      },
+      {
+        "rank": 5,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 25",
+        "page_number": 25,
+        "row_number": 0,
+        "distance": 0.76450514793396,
+        "text": "A New Engine  \nof  Inclusive  \nEnterprise Success\nCareers are at the heart of the UEL’s mission, \nwith enterprise and entrepreneurship embedded \nas powerful routes into employment. This \ncareers-first approach has driven a transforma-\ntion in graduate outcomes while positioning UEL \nas an innovator in inclusive enterprise. \nUEL also delivers a range of initiatives designed \nto help students and graduates turn ideas \ninto thriving enterprises. The Start-Up School \noffers a series of interactive workshops \ncovering the fundamentals of launching and \ngrowing a business, while the UEL Founders’ \nNetwork provides mentoring, collaboration and \npeer support. Through the network, aspiring \nentrepreneurs can connect with like-minded \nfounders, gain insights from experienced \nbusiness leaders, and celebrate milestones \ntogether. It’s a community that empowers UEL \nstudents and alumni to share experiences, access \nguidance and build the confidence to succeed in \nan ever-evolving enterprise landscape.\nUEL is now the UK’s largest, fastest mover in \nnew business growth, ranked 2nd in the UK for \nstudent start-ups, having surged from 90th in \njust a few years (HESA 2025). Even more remark-\nably,"
+      },
+      {
+        "rank": 6,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 22",
+        "page_number": 22,
+        "row_number": 0,
+        "distance": 0.775053858757019,
+        "text": "nationally \nfor Value-Added, a measure of how well students \nexceed expectations based on entry qualifica-\ntions. We also secured high rankings in Satisfied \nwith Assessment (13th) and Satisfied with \nTeaching (29th). \nThis achievement is more than a number — it \nunderscores the effectiveness of our Vision \n2028 strategy, the dedication of our staff \nand students, and our bold commitment to \nbeing a careers-first, inclusive, and impact-led \nuniversity. As a top six university in London and \na rising national voice, we remain focused on \ncontinuous improvement, sustainable growth and \ntransforming opportunity across communities.\nIn July 2025, UEL was the fastest-rising university \nin London and first in England for career success, \naccording to the latest Graduate Outcomes \nSurvey data. This achievement reflects significant \nimprovements in graduate employment rates and \nprofessional progression over successive years, \nconfirming that UEL’s careers-first, practice-\nbased approach is delivering measurable results.\nUnderpinning this rise is UEL’s Careers \nGuarantee, which commits every student to work- \nrelated learning from the outset. The rise is also \nsupported by our Mental Wealt"
+      },
+      {
+        "rank": 7,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 17",
+        "page_number": 17,
+        "row_number": 0,
+        "distance": 0.7942788600921631,
+        "text": "a leader in preparing our students for the fast-changing world of work \nthrough our multi-award-winning Mental Wealth and Professional Fitness programme, \nembedded into every course, which equips students with crucial skills such as \nemotional intelligence, digital proficiency, and cognitive resilience. UEL students also \nhave access to Career Passports, which track the mastery of industry-recognised \nskills validated by leaders such as Microsoft and Amazon. \nUEL’s data-driven approach to careers begins before students even attend their \nfirst classes. Through pre-enrolment support and careers registration, we can tailor \ninterventions from day one, ensuring that students hit the ground running. Outside of \nthe classroom, UEL offers our students co-curricular and extra-curricular activities \nthat empower them to take control of their own development. These include career \ndevelopment planning, skills development, volunteering, internships, mentoring, \nstart-up support, one-to-one coaching, temp work, and more. \nUEL’s combination of career support and development and advanced learning \ntechnologies has helped the University place in the top 10 per cent in the sector for \nimprovemen"
+      },
+      {
+        "rank": 8,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 9",
+        "page_number": 9,
+        "row_number": 0,
+        "distance": 0.801531195640564,
+        "text": "nancial position. Since the commencement \nof Vision 2028, UEL has moved from risk to \nstrength, joining a small group of debt-free \nuniversities, achieving sustainable growth and \nthe headroom to invest. That stewardship \nallows us to use resources the way we use \nideas: to close gaps, not widen them.\nDelivering over 17% of all service sector \nexports for Newham and Hackney combined \n(ONS), with over £1.2billion in UK annual \noutput generated and supporting over \n13,000 jobs – while directly employing more \npeople than other major local organisations \nWest Ham United FC and London City \nAirport combined – UEL is both an economic \npowerhouse and global export leader.\nThe year ahead will be more ambitious still. \nWe will complete a refresh of our Mental \nWealth and Professional Fitness curriculum, \nscale practice-based education across \nall programmes and extend our Careers \nGuarantee so every student benefits from high \nquality placements or enterprise experiences \naligned to growth sectors. We will deepen \nglobal partnerships that open mobility, \nresearch and market-entry routes for our \ngraduates. We will progress our “Investing \nin our Future” programme and our net zero \npathway,"
+      }
+    ]
+  },
+  {
+    "question_id": "Q06",
+    "question": "What controls does UEL describe for safeguarding public funding?",
+    "expected_source_provisional": "uel_annual_report_2024_25.pdf",
+    "expected_section_provisional": "",
+    "label_status": "provisional",
+    "latency_seconds": 0.2462,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 55",
+        "page_number": 55,
+        "row_number": 0,
+        "distance": 0.9123799800872803,
+        "text": "t \nat the end of the Annual Report. The Board has been able to balance the needs of the \nUniversity’s many stakeholders in considering this wide range of strategic matters.\nAs the governing body of the University of East London, the Board of Governors has \nresponsibility for maintaining a sound system of internal control in support of its policies, \naims and objectives. In so doing it has a responsibility to safeguard the public and other \nfunds for which it is responsible, in accordance with the duties assigned to the Board of \nGovernors in the Articles of Government and terms and conditions of funding for higher \neducation institutions with the OfS up to 31 July 2024 including its regulatory framework. \nThe system of internal control is designed to understand and manage, rather than eliminate, \nthe risk of non-achievement of policies, aims and objectives; it can therefore only provide \nonly a reasonable and not an absolute assurance of effectiveness. It is based on an ongoing \nprocess to identify the principal risks to the delivery of our policies, aims and objectives, to \nevaluate the nature and extent of those risks and to ensure they are managed. This process \nhas been in plac"
+      },
+      {
+        "rank": 2,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 42",
+        "page_number": 42,
+        "row_number": 0,
+        "distance": 0.9206910729408264,
+        "text": "Statement on internal control by the  \nBoard of Governors \nAs the governing body of the University of East London, the Board of Governors has responsibility \nfor maintaining a sound system of internal control in support of its policies, aims and objectives. In \nso doing it has a responsibility to safeguard the public and other funds for which it is responsible, in \naccordance with the duties assigned to the Board of Governors in the Articles of Government and \nthe OfS’ Terms and Conditions of Funding for 2024/2025 and its Regulatory Framework. \nThe system of internal control is designed to understand and manage, rather than eliminate, the risk \nof non-achievement of policies, aims and objectives; it can therefore provide only a reasonable and \nnot an absolute assurance of effectiveness. It is based on an ongoing process to identify the principal \nrisks to the delivery of our policies, aims and objectives, to evaluate the nature and extent of those \nrisks and to ensure they are managed. This process has been in place for the year ended 31 July 2025 \nand up to the date of approval of the financial statements, and the key elements of it are as follows: \n• The Board meets at least five"
+      },
+      {
+        "rank": 3,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 32",
+        "page_number": 32,
+        "row_number": 0,
+        "distance": 1.0078450441360474,
+        "text": "holding a person in slavery, servitude, \nforced or compulsory labour, or facilitating \ntheir travel with the intention of exploiting them \nshortly thereafter. \nUEL’s Business  \nUEL is an exempt charity under the terms \nof the Charities Act 2011, with the Office for \nStudents (OfS) acting as the Principal Regulator. \nOur charitable objectives focus on the delivery \nof education and research. As a charity, the \nUniversity must operate for the public benefit. \nWe are a UK-based university providing \neducational services to UK and international \nstudents and carrying out research activities. \nWe partner with UK and internationally based \nacademic institutions and educational providers \nwho are able to deliver UEL courses and their \nown. In addition, we partner with international \nstudent recruitment agents around the world.  \nUEL has five academic Schools and four \nresearch institutes which are supported by \nthe Office for Institutional Equity (OIE) and by \na range of professional services departments, \nincluding Student Services, External Relations, \nProcurement, Finance, People & Culture, Estates, \nInformation Technology, and Compliance, \nGovernance & Legal Services. \n \nWe have 1,55"
+      },
+      {
+        "rank": 4,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 41",
+        "page_number": 41,
+        "row_number": 0,
+        "distance": 1.0239582061767578,
+        "text": "egulatory framework \nand any other conditions which the OfS \nmay from time to time prescribe; \n• Ensure that funds from the Department \nfor Education are used only for the \npurposes for which they have been given \nand in accordance with the terms and \nconditions of the organisation; \n• Ensure that there are appropriate \nfinancial and management controls in \nplace to safeguard public funds and funds \nfrom other sources; \n• Safeguard the assets of the University of \nEast London and to prevent and detect \nfraud; and \n• Secure the economical, efficient, and \neffective management of the University of \nEast London’s resources and expenditure.\nCompliance with  \nSection 172 statement\nWhilst not a company, the principles of section \n172 of the Companies Act 2006 are being \nfollowed. Governors both individually and collec-\ntively, act in the way that they consider, in good \nfaith, would most likely promote the success of \nthe University for the benefit of its members as a \nwhole, and in doing so the Governors have regard \n(amongst other matters) to the: \n• Likely consequences of any decisions in the \ninterests of both customers and colleagues, \n• Need to foster the University’s business \nrel"
+      },
+      {
+        "rank": 5,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 45",
+        "page_number": 45,
+        "row_number": 0,
+        "distance": 1.053118109703064,
+        "text": "employed staff and agencies \non approved frameworks which are audited to provide assurance that pre-employment \nclearance has been obtained for agency staff;\n – implements a range of controls to protect staff from poor treatment and/or exploitation, \nwhich comply with all respective laws and regulations. These include provision of fair pay \nrates, London Living Wages, fair Terms and Conditions of employment and access to \ntraining and development opportunities;\n – purchases most products from UK or EU based firms, who may also be required to comply \nwith the requirements of the UK Modern Slavery Act (2015) or similar legislation in other \nEU states;\n – UEL purchase extensively through framework agreements administered by sector \npurchasing consortia, such as the London Universities Purchasing Consortium (LUPC) \nwhich accounted for 20% of the controllable spend (which excludes staff spend).  LUPC \nhas taken a leading role in identifying risks of human rights abuse within supply chains and \nbuilding appropriate clauses into supplier agreements. UEL will continue to work closely \nwith the LUPC and commend their decision to employ a research associate to further \ndevelop supply chain m"
+      },
+      {
+        "rank": 6,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 54",
+        "page_number": 54,
+        "row_number": 0,
+        "distance": 1.0603845119476318,
+        "text": "s to continue \nin operation for the foreseeable future. The going concern basis is appropriate for the \npreparation of the financial statements. \nThe Board of Governors has taken reasonable steps to:\n – ensure that funds from the Office for Students (OfS) are used only for the purposes for \nwhich they have been given and in accordance with the OfS terms and conditions, and \nthe regulatory framework and any other conditions which the OfS may from time to time \nprescribe; \n – ensure that funds from the Education and Skills Funding Agency are used only for the \npurposes for which they have been given and in accordance with the terms and conditions \nof the organisation; \n – ensure that there are appropriate financial and management controls in place to \nsafeguard public funds and funds from other sources; \n – safeguard the assets of the University of East London and to prevent and detect fraud; \nand \n – secure the economical, efficient, and effective management of the University of East \nLondon’s resources and expenditure.\nCorporate Governance\n106 107\nAnnual Report 23/24"
+      },
+      {
+        "rank": 7,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 42",
+        "page_number": 42,
+        "row_number": 0,
+        "distance": 1.085042119026184,
+        "text": "ar.\nThe University’s system of internal financial control is based on the following: \n• Comprehensive financial regulations and schedule of delegation, detailing financial controls and \nprocedures, approved annually by the Audit and Risk Committee and Board of Governors; \n• Detailed annual income, expenditure and capital budgets and cash flow forecasts, involving variance \nreporting and updates of forecast outturns; \n• Clearly defined and formalised requirements for the approval and control of expenditure, with \ninvestment decisions involving capital or revenue expenditure being subject to appropriate levels of \nappraisal and review as approved by the Board of Governors. \nThe review by the Board of the effectiveness of the system of internal control is informed by the work of \nthe internal auditors, KPMG. They submit regular reports on the adequacy and effectiveness of the system \nof internal controls, together with recommendations for improvement. Our review of the effectiveness of \nthe system of internal control is also informed by the work of the executive managers within the University, \nwho have responsibility for the development and maintenance of the internal control framewo"
+      },
+      {
+        "rank": 8,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 56",
+        "page_number": 56,
+        "row_number": 0,
+        "distance": 1.0990984439849854,
+        "text": "n Funding Council for England (HEFCE) Accountability and \nAudit Code of Practice (as adopted by the OfS) and submit regular reports on the adequacy \nand effectiveness of the system of internal controls, together with recommendations \nfor improvement. Our review of the effectiveness of the system of internal control is \nalso informed by the work of the executive managers within the University, who have \nresponsibility for the development and maintenance of the internal control framework and \nby comments made by the external auditors in their management letter and other reports.\nSteve Armstrong\nChair, Board of Governors \nUniversity of East London\n28 November 2024\nProfessor Amanda Broderick\nVice-Chancellor & President \n28 November 2024\nWe have audited the financial statements of the University of East London (the ‘University‘) \nand its two wholly owned subsidiaries (the ‘group’) for the year ended 31 July 2024 which \ncomprise the consolidated statements of comprehensive income, the consolidated and \nUniversity statement of changes in reserves, the consolidated and University balance sheets, \nthe consolidated statement of cash flows, the principal accounting policies and the notes to"
+      }
+    ]
+  },
+  {
+    "question_id": "Q07",
+    "question": "How does UEL describe Vision 2028?",
+    "expected_source_provisional": "uel_annual_report_2023_24.pdf",
+    "expected_section_provisional": "",
+    "label_status": "provisional",
+    "latency_seconds": 0.244,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 41",
+        "page_number": 41,
+        "row_number": 0,
+        "distance": 0.7591536045074463,
+        "text": "028's goals, by prioritising \nenvironmental and financial sustainability in an increasingly complex higher \neducation landscape. \nTogether, we march forward into the second phase of Vision 2028. We \nwelcome all that wish to join us.\n81\nAnnual Report 23/2480"
+      },
+      {
+        "rank": 2,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 3",
+        "page_number": 3,
+        "row_number": 0,
+        "distance": 0.8449289202690125,
+        "text": "success.\n“Vision 2028 is \ntransforming the \nUniversity of East \nLondon into a truly global \ncareers-first university. \nThe milestones we’ve \nachieved this year \ncontinue to demonstrate \nhow Vision 2028 turns \nambition into action \n— and ensures our \ngraduates are ready to \nshape a more connected, \nequitable and sustainable \nfuture.”\nPROFESSOR AMANDA BRODERICK, \nVICE-CHANCELLOR & PRESIDENT OF \nTHE UNIVERSITY OF EAST LONDON\n5\n4\n2024–2025  ANNUAL REPORT"
+      },
+      {
+        "rank": 3,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 7",
+        "page_number": 7,
+        "row_number": 0,
+        "distance": 0.9724505543708801,
+        "text": "or & \nPresident, the Executive Board and the \nUniversity’s staff, students, partners and alumni.  \nTheir talent, resilience and ambition give life to \nVision 2028 and meaning to our mission. As an \nalumnus, I know first-hand what a UEL education \nmakes possible. As Chair, I am confident that \nthe University is exceptionally well governed, \nfinancially strong and strategically positioned to \ndeliver even greater impact in the year ahead.\nTogether, we will continue to raise our game to \nensure that opportunity is not a privilege for the \nfew, but a promise delivered for the many.\nWITH BEST WISHES,\nSTEVE ARMSTRONG\n12\n13\n2024–2025  ANNUAL REPORT"
+      },
+      {
+        "rank": 4,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 36",
+        "page_number": 36,
+        "row_number": 0,
+        "distance": 0.9961169958114624,
+        "text": "sion as central \nto the realisation of Vision 2028. \nOur Athena Swan Silver award \ndemonstrates both our progress and \nour next steps to create an equitable \nenvironment for all members of our \ncommunity.” \nProfessor Amanda Broderick\nVice-Chancellor and President \nProgressing Social Justice\n70 71\nAnnual Report 23/24"
+      },
+      {
+        "rank": 5,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 24",
+        "page_number": 24,
+        "row_number": 0,
+        "distance": 1.0370146036148071,
+        "text": "24/25, with bold plans under consideration for how the University could \nevolve by 2040. These forward-thinking initiatives aim to ensure that \nUEL remains at the cutting edge of higher education, creating a future-\nready environment that supports innovation, sustainability, and a thriving \ncommunity for years to come.\n47\nAnnual Report 23/2446"
+      },
+      {
+        "rank": 6,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 41",
+        "page_number": 41,
+        "row_number": 0,
+        "distance": 1.0383702516555786,
+        "text": "Looking to the \nfuture with four \nnew strategies\nVision 2028 is driven by four focused strategies. They are all guided by the \nfour institutional priorities we have discussed in this report: promoting a \nsustainable 5.0 economy, advancing social justice, enhancing health gain \nand wellness, and serving as a global and local anchor. \nThe Education and Experience strategy charts a course for a seamless \nand truly inclusive experience that empowers UEL students to succeed. \nThe Careers and Enterprise strategy lays out our plans for industry \npartnerships and careers support that equip students with the skills \nand competencies needed to thrive in a constantly changing modern \nworkforce.  \nThe Impact and Innovation strategy will build our research capacity \nand enhance the real-world impact of the pioneering research work \nundertaken by UEL academics and postgraduate researchers, while \nour Sustainable Growth and Diversification strategy underwrites \nour continued progress towards Vision 2028's goals, by prioritising \nenvironmental and financial sustainability in an increasingly complex higher \neducation landscape. \nTogether, we march forward into the second phase of Vision 2028. We \nw"
+      },
+      {
+        "rank": 7,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 4",
+        "page_number": 4,
+        "row_number": 0,
+        "distance": 1.063615083694458,
+        "text": "A University for a \nChanging W orld:  \nUEL in Numbers \nExpanding horizons: \nIn 2024/2025, 42,062 students chose to \nstudy with us — 21,876  on campus and \n20,186 through our growing network of UK \nand international partners. Since the launch \nof Vision 2028, our student community has \nincreased by 150%, reflecting UEL’s appeal \nas a university built for the future. \nConnected to the world: \nOur students come from over 160 nations, \nbringing global perspectives to every \nclassroom, laboratory and studio. \nProudly diverse:\nWe are the UK’s most socially inclusive \nuniversity. This vibrant diversity fuels innova-\ntion, collaboration and creativity across our \ncampuses and partner institutions.\nA Local and Global Anchor.  \nA Place of Purpose. A Force for Change.\n7\n6\n2024–2025  ANNUAL REPORT"
+      },
+      {
+        "rank": 8,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 22",
+        "page_number": 22,
+        "row_number": 0,
+        "distance": 1.0655262470245361,
+        "text": "livering measurable results.\nUnderpinning this rise is UEL’s Careers \nGuarantee, which commits every student to work- \nrelated learning from the outset. The rise is also \nsupported by our Mental Wealth & Professional \nFitness curriculum, enhanced employer engage-\nment, and embedded enterprise opportunities. \nUEL outperformed many peer institutions in \nnarrowing graduate outcome gaps and driving \nsocial mobility.\nThis recognition underscores UEL’s growing \nreputation for turning ambition into opportunity \nand reinforces our strategic goals under Vision \n2028. It is a testament to the dedication of \nstaff, partners, and students, and reinforces our \nmission to make inclusive, high-impact careers \naccessible to all.\n43\n42\n2024–2025  ANNUAL REPORT"
+      }
+    ]
+  },
+  {
+    "question_id": "Q08",
+    "question": "How does UEL describe its role as a local anchor institution?",
+    "expected_source_provisional": "uel_annual_report_2023_24.pdf",
+    "expected_section_provisional": "",
+    "label_status": "provisional",
+    "latency_seconds": 0.2072,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 32",
+        "page_number": 32,
+        "row_number": 0,
+        "distance": 0.7960668206214905,
+        "text": "holding a person in slavery, servitude, \nforced or compulsory labour, or facilitating \ntheir travel with the intention of exploiting them \nshortly thereafter. \nUEL’s Business  \nUEL is an exempt charity under the terms \nof the Charities Act 2011, with the Office for \nStudents (OfS) acting as the Principal Regulator. \nOur charitable objectives focus on the delivery \nof education and research. As a charity, the \nUniversity must operate for the public benefit. \nWe are a UK-based university providing \neducational services to UK and international \nstudents and carrying out research activities. \nWe partner with UK and internationally based \nacademic institutions and educational providers \nwho are able to deliver UEL courses and their \nown. In addition, we partner with international \nstudent recruitment agents around the world.  \nUEL has five academic Schools and four \nresearch institutes which are supported by \nthe Office for Institutional Equity (OIE) and by \na range of professional services departments, \nincluding Student Services, External Relations, \nProcurement, Finance, People & Culture, Estates, \nInformation Technology, and Compliance, \nGovernance & Legal Services. \n \nWe have 1,55"
+      },
+      {
+        "rank": 2,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 26",
+        "page_number": 26,
+        "row_number": 0,
+        "distance": 0.8354395627975464,
+        "text": "ccess to high \nquality facilities and to higher education by brining \nyoung people to UEL ’s SportDock and engaging \nthem with sport and role models. \nIn 2024, over 1,683 children from 20 local schools \ntook part in the programme. This year, participants \nhad the opportunity to meet Olympic gold medallist \nChristine Ohuruogu MBE.\nUEL ’s Royal Docks School of Business and Law \ncontinued to provide services through its practice-\nbased centres: the Legal Advice Centre, used by \n360 local residents, T ax and Accountancy Clinic \nand Business Advice Centre. These centres offer \nfree legal, financial and business advice to the \nlocal community, empowering individuals with the \nknowledge and support they need to navigate \ncomplex issues.  \nUEL ’s outreach programmes \nin local schools, including \nsummer schools and access \nprograms, are also helping \nto break down barriers to \nhigher education. These \ninitiatives not only support \nlocal students but also \nstrengthen UEL ’s position \nas a critical partner in the \neducational and economic \ndevelopment of the region. \nCreating Place as both a Local Anchor and Global Gateway\n50 51\nAnnual Report 23/24"
+      },
+      {
+        "rank": 3,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 26",
+        "page_number": 26,
+        "row_number": 0,
+        "distance": 0.8637515902519226,
+        "text": "eaningful \nimpact. This shortlisting affirms UEL’s role as \na national exemplar of how universities can \npartner locally and innovate globally.\nStart-up Profile: \nLodoland \nUEL and Newham \nPartnership \nShortlisted for \nNational AI Award\nA Global Gateway for Education,  \nInnovation and Opportunity\nIn 2024/2025, UEL strengthened our position as \na global gateway for education and innovation, \nexpanding international reach and impact. Now \namong the UK’s top providers of Transnational \nEducation (TNE), UEL’s global footprint grew \nthrough new partnerships and the success of \nestablished collaborations — uniting education, \nenterprise and research across continents.\nFor the first time, enrolments on UEL degrees \ndelivered with international partners surpassed \n26,000 students, including over 10,000 \nthrough our UNICAF partnership and 5,500 \nvia Metropolitan College in Greece — Europe’s \nlargest transnational education partnership.\nUEL’s ‘glocal anchor’ model, a cornerstone of \nVision 2028, continues to link local innovation \nwith global opportunity, advancing our goal to \nbe the UK’s leading careers-first university. \nThis year, the University deepened ties with key \nregions including"
+      },
+      {
+        "rank": 4,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 24",
+        "page_number": 24,
+        "row_number": 0,
+        "distance": 0.8791503310203552,
+        "text": "n between students, \nresearchers, and local businesses, and provides an inclusive environment \nto test, research, and adapt sustainability technology in real-world \nsettings.\nOther key highlights include completing our first academic pilot of Your \nSpace, Your Place, creating activity-based, flexible working environments \nfor the Royal Docks School of Business and Law, encouraging staff \nand students to connect and collaborate seamlessly.  To support our \narchitectural and visual art students, a multi-use exhibition space was \ncreated within the AVA Building entrance to better showcase students’ \nwork.\nUEL’s reputation as a global gateway continues to progress, driven by our \nrobust network of international partnerships. This year saw significant \nstrides in deepening our existing relationships while also establishing new, \ndynamic collaborations.\nThe University continued to forge strategic partnerships across North \nAmerica, Europe and Asia, and is now in the top 10 per cent of Transnational \nEducation (TNE) providers in the UK, with strong partnerships that include \nMetropolitan College in Greece.\nA high-level delegation, led by Vice-Chancellor and President Professor \nAmanda Bro"
+      },
+      {
+        "rank": 5,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 25",
+        "page_number": 25,
+        "row_number": 0,
+        "distance": 0.9004173874855042,
+        "text": "joint academic initiatives. Professor Broderick highlighted UEL’s Vision \n2028 strategy, which aligns with Egypt’s Strategy 2030, and emphasized \nthe importance of international collaborations in fostering academic \nexcellence. \nUEL also announced an agreement in May with the University of South \nFlorida in the United States for the two institutions to collaborate across \na range of key academic areas, fostering innovation, enhancing student \nopportunities and driving impactful research.\nThe two universities share a focus on transforming their respective local \ncommunities, with UEL’s focus as an anchor institution in east London \nsharing many of the characteristics of USF’s vision to transform the \nTampa area of Florida. \nOur student population is comprised of 160+ nationalities, and UEL ranks \nsecond among UK institutions for its Indian student population (HESA). \nWe remain committed to strengthening our relationship with India, \ncontinuously working on partnerships with Indian educational institutions \nto enhance opportunities for both current and future students. \nThis year, new partnerships were forged with Indian state industry-\nacademia convening boards, leading to a hackath"
+      },
+      {
+        "rank": 6,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 27",
+        "page_number": 27,
+        "row_number": 0,
+        "distance": 0.9134539365768433,
+        "text": "Last year, the UEL Outreach and Access team:\nWorked with \nTo o k\nDelivered\n3,911\n3,053\n105\nstudents across\ntelephone enquiries \nand referred\nlocal community \noutreach activities\n 105\n238\nschools  \nand colleges\nto our Pre-Entry \nProgramme\nIn 2024, the University launched the Royal Docks Schools, \nColleges, and Community Partnership, a values-based \nalliance that focuses on how we can collectively strengthen \nthe communities we serve and develop mutually beneficial \nworking relationships. The objective of the partnership, \nas it evolves, is to make a real difference to those living, \nworking, and studying in east London, raising aspirations, \nand removing barriers. The partnership is a catalyst for \ntransformative change across the east London community, \nthat will help to redefine the educational and community \nlandscape and empower the next generation of learners.\nUEL is committed to making a tangible difference in the lives \nof east London residents, reaffirming its role as a key player \nin the region’s growth and prosperity.\n“Our UEL Outreach plays a significant role \nin expanding our students' horizons, helping \nthem envision pathways they may not have \nconsidered before. Our le"
+      },
+      {
+        "rank": 7,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 18",
+        "page_number": 18,
+        "row_number": 0,
+        "distance": 0.9212113618850708,
+        "text": "rt-up, and mentoring \nvia the UEL Founders Network. The Founders Network allows UEL \nstudents and graduates to share experiences, get support, and learn from \nmore experienced entrepreneurs within the University community. UEL \nstudents and graduate entrepreneurs who join the network can connect \nwith like-minded founders, celebrate business goals and learn from \nexperienced individuals.\n“BACK:ED is not just about \nhaving the best products/services \nor the most innovative ideas; it's \nabout cultivating a relentless \nfocus on nurturing results for our \nstudents, embedding a culture of \ncollaboration, and maintaining \nthe agility to adapt in an ever-\nchanging landscape”\nVonley Joseph\nUEL Student Enterprise Manager\nIn the past five years,  \nUEL has helped support\nWhat do UEL students \ndo after graduating?\nOver\n10%\nof our graduates in work are employed by \nTimes 100 companies, including Apple, \nAccenture, Clifford Chance, NHS, Civil Service \nand local government\nOver\n33%\nOur graduates deeply care \nabout their communities –\nwork in health \nprofessions or enter \nthe education sector. \n7%\nMany UEL graduates are \nentrepreneurial, with \nstarting their own \nbusinesses within a \nyear of gradu"
+      },
+      {
+        "rank": 8,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 27",
+        "page_number": 27,
+        "row_number": 0,
+        "distance": 0.9259326457977295,
+        "text": "UEL is dedicated to \npromoting civic engagement that positively \nimpacts societal wellbeing. Our practice \ncentres align with this ethos, significantly \ncontributing to local and global public and \ncommunity engagement.” \n“University of East London is a huge part \nof our community in Newham. I have \nseen firsthand its positive impact on \nthe east London. It has always been an \nenterprising, vibrant, and forward-looking \ninstitution.”\nMahmoud Warsame \nNewham Sixth Form Advice and  \nRecruitment Manager (Careers Leader)\nTania Morgan\nUEL law graduate and Newham resident \nSaadiya Ahmad \nDirector of Careers and Enterprise,  \nwho leads RDSBL’s practice-based centres.\nSir Stephen Timms \nMP for East Ham\nCreating Place as both a Local Anchor and Global Gateway\n53\nAnnual Report 23/2452\nAnnual Report 23/24"
+      }
+    ]
+  },
+  {
+    "question_id": "Q09",
+    "question": "Where can student outcomes data be downloaded from the Office for Students?",
+    "expected_source_provisional": "ofs_student_outcomes.html",
+    "expected_section_provisional": "",
+    "label_status": "provisional",
+    "latency_seconds": 0.2516,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "ofs_student_outcomes.html",
+        "section": "Webpage",
+        "page_number": 0,
+        "row_number": 0,
+        "distance": 0.6192732453346252,
+        "text": "Student outcomes data dashboard Official statistics About the dashboard About the data dashboard Dashboard user guide Explore the dashboard Data dashboard Queries and feedback Data FAQs Get the data The indicators included in the student outcomes data dashboard are also available in a tabular format as Excel workbooks or CSV files. We have published the student outcomes data dashboard as official statistics . Excel files The Excel workbooks are split into two downloads corresponding to the different views of a provider’s student population. Each download contains one workbook for each provider. Taught or registered population for each provider (zipped) This is the view of a provider’s student population as shown on the overview page of the dashboard. Taught population for each provider (zipped) This view of a provider’s student population is accessible from the detailed view page of the dashboard. Partnership population for each provider (zipped) This view of a provider’s student population is accessible from the detailed view page of the dashboard. CSV files The CSV files are available in two formats: Download the CSV files for each provider (zipped) Download a single CSV file con"
+      },
+      {
+        "rank": 2,
+        "source": "ofs_student_outcomes.html",
+        "section": "Webpage",
+        "page_number": 0,
+        "row_number": 0,
+        "distance": 0.704927921295166,
+        "text": "refer to the data dashboard or the data downloads above for our most up-to-date information on student outcomes. July 2024 datafiles There are additional risks to data quality in some areas of the 2022-23 returns, but in general we consider the data is fit for purpose and facilitates robust measures of student outcomes and experiences. Excel files The Excel workbooks are split into two downloads corresponding to the different views of a provider’s student population. Each download contains one workbook for each provider. Taught or registered population for each provider (zipped) This is the view of a provider’s student population as shown on the overview page of the dashboard. Taught population for each provider (zipped) This view of a provider’s student population is accessible from the detailed view page of the dashboard. Partnership population for each provider (zipped) This view of a provider’s student population is accessible from the detailed view page of the dashboard. CSV files The CSV files are available in two formats: Download the CSV files for each provider (zipped) Download a single CSV file containing all providers (zipped) July 2023 datafiles Excel files The Excel w"
+      },
+      {
+        "rank": 3,
+        "source": "ofs_student_outcomes.html",
+        "section": "Webpage",
+        "page_number": 0,
+        "row_number": 0,
+        "distance": 0.8416775465011597,
+        "text": "he data from the apprenticeship completion taught table. CSV files The CSV files are available in two formats: Download the CSV files for each provider (zipped) Download a single CSV file containing all providers (zipped) April 2023 datafiles Excel files Taught or registered population for each provider (zipped) Taught population for each provider (zipped) CSV files Download the CSV files for each provider (zipped) Download a single CSV file containing all providers (zipped) September 2022 datafiles Excel files Download the Excel workbooks: Taught or registered population for each provider (zipped) Download the Excel workbooks: Taught population for each provider (zipped) CSV files Download the CSV files for each provider (zipped) Download a single CSV file containing all providers (zipped) Published 30 September 2022 Last updated 05 February 2026 + show all updates 05 February 2026 The data has been updated after an error was identified in the calculation of the standard error for the difference from benchmark estimates. This led to the estimates being too low in the previous version of this release. 24 September 2025 When we updated the student outcomes release on 21 August 2025,"
+      },
+      {
+        "rank": 4,
+        "source": "ofs_student_outcomes.html",
+        "section": "Webpage",
+        "page_number": 0,
+        "row_number": 0,
+        "distance": 0.8774577379226685,
+        "text": "s The CSV files are available in two formats: Download the CSV files for each provider (zipped) Download a single CSV file containing all providers (zipped) July 2023 datafiles Excel files The Excel workbooks are split into two downloads corresponding to the different views of a provider’s student population. Each download contains one workbook for each provider. Taught or registered population for each provider (zipped) This is the view of a provider’s student population as shown on the overview page of the dashboard. Taught population for each provider (zipped) This view of a provider’s student population is accessible from the detailed view page of the dashboard. Note : The workbooks showing the taught population for each provider were updated in April 2024 to remove the apprenticeships completion page due to an error. This error did not impact any other pages, or the data in the Tableau or csv files. Please use the csv file or contact us on [email protected] if you need access to the data from the apprenticeship completion taught table. CSV files The CSV files are available in two formats: Download the CSV files for each provider (zipped) Download a single CSV file containing a"
+      },
+      {
+        "rank": 5,
+        "source": "ofs_student_outcomes.html",
+        "section": "Webpage",
+        "page_number": 0,
+        "row_number": 0,
+        "distance": 0.9173277616500854,
+        "text": "ation is accessible from the detailed view page of the dashboard. CSV files The CSV files are available in two formats: Download the CSV files for each provider (zipped) Download a single CSV file containing all providers (zipped) Data protection For data protection purposes, we have applied a comprehensive set of rounding and suppression criteria. Anyone wishing to use the data must follow the guidelines for appropriate use . Archived data We have retained datafiles related to the student outcomes dashboard published previously. The archived datafiles reflect the OfS's position prior to any investigations opened for the 2022-23 assessment cycle and do not reflect any judgements made by the OfS. As a result, a provider with data below a numerical threshold does not necessarily mean that positive student outcomes are not being delivered. In addition, providers in these datafiles may have submitted data amendments that were subsequently accepted but are not reflected in this data. Please refer to the data dashboard or the data downloads above for our most up-to-date information on student outcomes. July 2024 datafiles There are additional risks to data quality in some areas of the 20"
+      },
+      {
+        "rank": 6,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Satisfaction",
+        "page_number": 0,
+        "row_number": 4,
+        "distance": 1.05622398853302,
+        "text": "Worksheet: Student Satisfaction\nAcademic Year: 2023/24\nSchool: Computing\nCategory: Overall\nSatisfaction Rate: 80"
+      },
+      {
+        "rank": 7,
+        "source": "institutional_performance.xlsx",
+        "section": "Programme Performance",
+        "page_number": 0,
+        "row_number": 4,
+        "distance": 1.0639029741287231,
+        "text": "Worksheet: Programme Performance\nAcademic Year: 2024/25\nSchool: Education\nProgramme: Primary Education\nEnrolments: 720\nContinuation Rate: 87\nCompletion Rate: 85"
+      },
+      {
+        "rank": 8,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Satisfaction",
+        "page_number": 0,
+        "row_number": 5,
+        "distance": 1.0654526948928833,
+        "text": "Worksheet: Student Satisfaction\nAcademic Year: 2024/25\nSchool: Computing\nCategory: Overall\nSatisfaction Rate: 76"
+      }
+    ]
+  },
+  {
+    "question_id": "Q10",
+    "question": "What is the reported first-year undergraduate retention rate?",
+    "expected_source_provisional": "institutional_performance.txt",
+    "expected_section_provisional": "STUDENT RETENTION",
+    "label_status": "provisional",
+    "latency_seconds": 0.251,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "institutional_performance.txt",
+        "section": "STUDENT RETENTION",
+        "page_number": 0,
+        "row_number": 0,
+        "distance": 0.5065134167671204,
+        "text": "STUDENT RETENTION\nOverall student retention rate: 84%.\nPrevious year retention rate: 87%.\nInstitutional retention target: 90%.\nRetention among first-year undergraduate students: 79%.\nRetention among postgraduate taught students: 91%."
+      },
+      {
+        "rank": 2,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 7,
+        "distance": 0.5682838559150696,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Education\nLevel: Undergraduate\nRetention Rate: 87\nTarget: 90"
+      },
+      {
+        "rank": 3,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 9,
+        "distance": 0.573110044002533,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Health\nLevel: Undergraduate\nRetention Rate: 86\nTarget: 90"
+      },
+      {
+        "rank": 4,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 8,
+        "distance": 0.5842037796974182,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2023/24\nSchool: Health\nLevel: Undergraduate\nRetention Rate: 89\nTarget: 90"
+      },
+      {
+        "rank": 5,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 3,
+        "distance": 0.5853874087333679,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Business\nLevel: Undergraduate\nRetention Rate: 82\nTarget: 90"
+      },
+      {
+        "rank": 6,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 2,
+        "distance": 0.5974214673042297,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2023/24\nSchool: Business\nLevel: Undergraduate\nRetention Rate: 85\nTarget: 90"
+      },
+      {
+        "rank": 7,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 6,
+        "distance": 0.6079275608062744,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2023/24\nSchool: Education\nLevel: Undergraduate\nRetention Rate: 90\nTarget: 90"
+      },
+      {
+        "rank": 8,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "page_number": 0,
+        "row_number": 5,
+        "distance": 0.6437748074531555,
+        "text": "Worksheet: Student Retention\nAcademic Year: 2024/25\nSchool: Computing\nLevel: Undergraduate\nRetention Rate: 84\nTarget: 90"
+      }
+    ]
+  }
+]

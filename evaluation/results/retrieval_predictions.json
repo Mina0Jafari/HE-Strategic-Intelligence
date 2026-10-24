@@ -1,0 +1,572 @@
+[
+  {
+    "question_id": "Q01",
+    "question": "What is the overall student retention rate?",
+    "expected_source_provisional": "institutional_performance.txt",
+    "label_status": "provisional",
+    "latency_seconds": 0.8185,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "institutional_performance.txt",
+        "section": "STUDENT RETENTION",
+        "distance": 0.3866196572780609
+      },
+      {
+        "rank": 2,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.5471023321151733
+      },
+      {
+        "rank": 3,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.582404375076294
+      },
+      {
+        "rank": 4,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.5862512588500977
+      },
+      {
+        "rank": 5,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.587039053440094
+      },
+      {
+        "rank": 6,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.597931981086731
+      },
+      {
+        "rank": 7,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.5995358824729919
+      },
+      {
+        "rank": 8,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.6091314554214478
+      }
+    ]
+  },
+  {
+    "question_id": "Q02",
+    "question": "What was the previous year retention rate and what is the institutional target?",
+    "expected_source_provisional": "institutional_performance.txt",
+    "label_status": "provisional",
+    "latency_seconds": 0.2709,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "institutional_performance.txt",
+        "section": "STUDENT RETENTION",
+        "distance": 0.6085466146469116
+      },
+      {
+        "rank": 2,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.6750513315200806
+      },
+      {
+        "rank": 3,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.6851171255111694
+      },
+      {
+        "rank": 4,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.6883505582809448
+      },
+      {
+        "rank": 5,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.7101479768753052
+      },
+      {
+        "rank": 6,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.7229474782943726
+      },
+      {
+        "rank": 7,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.7325680255889893
+      },
+      {
+        "rank": 8,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.7805942296981812
+      }
+    ]
+  },
+  {
+    "question_id": "Q03",
+    "question": "What are the institutional strategic priorities?",
+    "expected_source_provisional": "institutional_performance.txt",
+    "label_status": "provisional",
+    "latency_seconds": 0.2934,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 52",
+        "distance": 0.9444906711578369
+      },
+      {
+        "rank": 2,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 55",
+        "distance": 1.0299409627914429
+      },
+      {
+        "rank": 3,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 55",
+        "distance": 1.0385518074035645
+      },
+      {
+        "rank": 4,
+        "source": "institutional_performance.txt",
+        "section": "STRATEGIC PRIORITIES",
+        "distance": 1.0394763946533203
+      },
+      {
+        "rank": 5,
+        "source": "institutional_performance.txt",
+        "section": "DOCUMENT INFORMATION",
+        "distance": 1.0569897890090942
+      },
+      {
+        "rank": 6,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 41",
+        "distance": 1.0783883333206177
+      },
+      {
+        "rank": 7,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 55",
+        "distance": 1.122302770614624
+      },
+      {
+        "rank": 8,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 54",
+        "distance": 1.149242639541626
+      }
+    ]
+  },
+  {
+    "question_id": "Q04",
+    "question": "How does undergraduate retention vary by school?",
+    "expected_source_provisional": "institutional_performance.xlsx",
+    "label_status": "provisional",
+    "latency_seconds": 0.3526,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "institutional_performance.txt",
+        "section": "STUDENT RETENTION",
+        "distance": 0.513418972492218
+      },
+      {
+        "rank": 2,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.6930443644523621
+      },
+      {
+        "rank": 3,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.6975023746490479
+      },
+      {
+        "rank": 4,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.7184411883354187
+      },
+      {
+        "rank": 5,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.7190441489219666
+      },
+      {
+        "rank": 6,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.7234808206558228
+      },
+      {
+        "rank": 7,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.7260468602180481
+      },
+      {
+        "rank": 8,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.7735385894775391
+      }
+    ]
+  },
+  {
+    "question_id": "Q05",
+    "question": "What does UEL say about its careers-first strategy?",
+    "expected_source_provisional": "uel_annual_report_2024_25.pdf",
+    "label_status": "provisional",
+    "latency_seconds": 0.3463,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 25",
+        "distance": 0.691372811794281
+      },
+      {
+        "rank": 2,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 22",
+        "distance": 0.7253900766372681
+      },
+      {
+        "rank": 3,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 18",
+        "distance": 0.7505295276641846
+      },
+      {
+        "rank": 4,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 17",
+        "distance": 0.7614243626594543
+      },
+      {
+        "rank": 5,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 25",
+        "distance": 0.76450514793396
+      },
+      {
+        "rank": 6,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 22",
+        "distance": 0.775053858757019
+      },
+      {
+        "rank": 7,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 17",
+        "distance": 0.7942788600921631
+      },
+      {
+        "rank": 8,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 9",
+        "distance": 0.801531195640564
+      }
+    ]
+  },
+  {
+    "question_id": "Q06",
+    "question": "What controls does UEL describe for safeguarding public funding?",
+    "expected_source_provisional": "uel_annual_report_2024_25.pdf",
+    "label_status": "provisional",
+    "latency_seconds": 0.2952,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 55",
+        "distance": 0.9123799800872803
+      },
+      {
+        "rank": 2,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 42",
+        "distance": 0.9206910729408264
+      },
+      {
+        "rank": 3,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 32",
+        "distance": 1.0078450441360474
+      },
+      {
+        "rank": 4,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 41",
+        "distance": 1.0239582061767578
+      },
+      {
+        "rank": 5,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 45",
+        "distance": 1.053118109703064
+      },
+      {
+        "rank": 6,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 54",
+        "distance": 1.0603845119476318
+      },
+      {
+        "rank": 7,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 42",
+        "distance": 1.085042119026184
+      },
+      {
+        "rank": 8,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 56",
+        "distance": 1.0990984439849854
+      }
+    ]
+  },
+  {
+    "question_id": "Q07",
+    "question": "How does UEL describe Vision 2028?",
+    "expected_source_provisional": "uel_annual_report_2023_24.pdf",
+    "label_status": "provisional",
+    "latency_seconds": 0.257,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 41",
+        "distance": 0.7591536045074463
+      },
+      {
+        "rank": 2,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 3",
+        "distance": 0.8449289202690125
+      },
+      {
+        "rank": 3,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 7",
+        "distance": 0.9724505543708801
+      },
+      {
+        "rank": 4,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 36",
+        "distance": 0.9961169958114624
+      },
+      {
+        "rank": 5,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 24",
+        "distance": 1.0370146036148071
+      },
+      {
+        "rank": 6,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 41",
+        "distance": 1.0383702516555786
+      },
+      {
+        "rank": 7,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 4",
+        "distance": 1.063615083694458
+      },
+      {
+        "rank": 8,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 22",
+        "distance": 1.0655262470245361
+      }
+    ]
+  },
+  {
+    "question_id": "Q08",
+    "question": "How does UEL describe its role as a local anchor institution?",
+    "expected_source_provisional": "uel_annual_report_2023_24.pdf",
+    "label_status": "provisional",
+    "latency_seconds": 0.2938,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 32",
+        "distance": 0.7960668206214905
+      },
+      {
+        "rank": 2,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 26",
+        "distance": 0.8354395627975464
+      },
+      {
+        "rank": 3,
+        "source": "uel_annual_report_2024_25.pdf",
+        "section": "Page 26",
+        "distance": 0.8637515902519226
+      },
+      {
+        "rank": 4,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 24",
+        "distance": 0.8791503310203552
+      },
+      {
+        "rank": 5,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 25",
+        "distance": 0.9004173874855042
+      },
+      {
+        "rank": 6,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 27",
+        "distance": 0.9134539365768433
+      },
+      {
+        "rank": 7,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 18",
+        "distance": 0.9212113618850708
+      },
+      {
+        "rank": 8,
+        "source": "uel_annual_report_2023_24.pdf",
+        "section": "Page 27",
+        "distance": 0.9259326457977295
+      }
+    ]
+  },
+  {
+    "question_id": "Q09",
+    "question": "Where can student outcomes data be downloaded from the Office for Students?",
+    "expected_source_provisional": "ofs_student_outcomes.html",
+    "label_status": "provisional",
+    "latency_seconds": 0.2846,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "ofs_student_outcomes.html",
+        "section": "Webpage",
+        "distance": 0.6192732453346252
+      },
+      {
+        "rank": 2,
+        "source": "ofs_student_outcomes.html",
+        "section": "Webpage",
+        "distance": 0.704927921295166
+      },
+      {
+        "rank": 3,
+        "source": "ofs_student_outcomes.html",
+        "section": "Webpage",
+        "distance": 0.8416775465011597
+      },
+      {
+        "rank": 4,
+        "source": "ofs_student_outcomes.html",
+        "section": "Webpage",
+        "distance": 0.8774577379226685
+      },
+      {
+        "rank": 5,
+        "source": "ofs_student_outcomes.html",
+        "section": "Webpage",
+        "distance": 0.9173277616500854
+      },
+      {
+        "rank": 6,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Satisfaction",
+        "distance": 1.05622398853302
+      },
+      {
+        "rank": 7,
+        "source": "institutional_performance.xlsx",
+        "section": "Programme Performance",
+        "distance": 1.0639029741287231
+      },
+      {
+        "rank": 8,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Satisfaction",
+        "distance": 1.0654526948928833
+      }
+    ]
+  },
+  {
+    "question_id": "Q10",
+    "question": "What is the reported first-year undergraduate retention rate?",
+    "expected_source_provisional": "institutional_performance.txt",
+    "label_status": "provisional",
+    "latency_seconds": 0.257,
+    "retrieved": [
+      {
+        "rank": 1,
+        "source": "institutional_performance.txt",
+        "section": "STUDENT RETENTION",
+        "distance": 0.5065134167671204
+      },
+      {
+        "rank": 2,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.5682838559150696
+      },
+      {
+        "rank": 3,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.573110044002533
+      },
+      {
+        "rank": 4,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.5842037796974182
+      },
+      {
+        "rank": 5,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.5853874087333679
+      },
+      {
+        "rank": 6,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.5974214673042297
+      },
+      {
+        "rank": 7,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.6079275608062744
+      },
+      {
+        "rank": 8,
+        "source": "institutional_performance.xlsx",
+        "section": "Student Retention",
+        "distance": 0.6437748074531555
+      }
+    ]
+  }
+]

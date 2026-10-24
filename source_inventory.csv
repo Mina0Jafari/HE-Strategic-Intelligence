@@ -1,0 +1,11 @@
+File,Type,Size (MB),Details,Status
+hesa_enrolments.csv,.csv,11.87,9 columns,OK
+hesa_entrants.csv,.csv,0,3 columns,OK
+hesa_provider_enrolments.csv,.csv,18.6,8 columns,OK
+institutional_performance.txt,.txt,0,1053 characters,OK
+institutional_performance.xlsx,.xlsx,0.01,"4 sheets: Student Retention, Student Satisfaction, Programme Performance, Financial Performance",OK
+NSS26_Summary_Taught_All_modes.xlsx,.xlsx,114.03,"6 sheets: Notes, All_subjects, CAH_level_1, CAH_level_2, CAH_level_3",OK
+NSS_2026_headline_results.xlsx,.xlsx,0.03,"7 sheets: Notes, Mode, Level, Subject, Country_Registered",OK
+uel_annual_report_2023_24.pdf,.pdf,12.42,82 pages,OK
+uel_annual_report_2024_25.pdf,.pdf,21.94,64 pages,OK
+uel_student_outcomes.xlsx,.xlsx,0.7,"12 sheets: Cover_sheet, Table_of_contents, TorR_continuation_FT, TorR_continuation_PT, TorR_continuation_Appr",OK

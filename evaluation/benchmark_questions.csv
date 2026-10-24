@@ -1,0 +1,11 @@
+﻿question_id,split,category,question,expected_source,expected_section,label_status
+Q01,dev,retention,What is the overall student retention rate?,institutional_performance.txt,STUDENT RETENTION,provisional
+Q02,dev,retention,What was the previous year retention rate and what is the institutional target?,institutional_performance.txt,STUDENT RETENTION,provisional
+Q03,dev,strategy,What are the institutional strategic priorities?,institutional_performance.txt,STRATEGIC PRIORITIES,provisional
+Q04,dev,retention,How does undergraduate retention vary by school?,institutional_performance.xlsx,Student Retention,provisional
+Q05,dev,strategy,What does UEL say about its careers-first strategy?,uel_annual_report_2024_25.pdf,,provisional
+Q06,dev,governance,What controls does UEL describe for safeguarding public funding?,uel_annual_report_2024_25.pdf,,provisional
+Q07,test,strategy,How does UEL describe Vision 2028?,uel_annual_report_2023_24.pdf,,provisional
+Q08,test,regional,How does UEL describe its role as a local anchor institution?,uel_annual_report_2023_24.pdf,,provisional
+Q09,test,sector,Where can student outcomes data be downloaded from the Office for Students?,ofs_student_outcomes.html,,provisional
+Q10,test,retention,What is the reported first-year undergraduate retention rate?,institutional_performance.txt,STUDENT RETENTION,provisional

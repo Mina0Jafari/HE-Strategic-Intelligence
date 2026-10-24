@@ -1,6 +1,4 @@
-
 import time
-
 from agents.retrieval_agent import RetrievalAgent
 from agents.analysis_agent import AnalysisAgent
 from agents.reporting_agent import ReportingAgent
@@ -50,6 +48,16 @@ class OrchestratorAgent:
                 )
             }
 
+        print("\n[ORCHESTRATOR DEBUG]")
+        print("Evidence passed to Analysis Agent:", len(evidence))
+
+        for item in evidence:
+            print(
+                item["source_id"],
+                item["document"],
+                item.get("data_type")
+            )
+
         # STEP 2: ANALYSIS
         analysis_result = self.analysis_agent.run(
             question=question,
@@ -60,6 +68,24 @@ class OrchestratorAgent:
             "agent": "Analysis & Reasoning Agent",
             "status": "completed"
         })
+
+        print("\n[ANALYSIS OUTPUT DEBUG]")
+
+        analysis_text = str(analysis_result["analysis"])
+
+        print("Analysis length:", len(analysis_text))
+        print(
+            "Contains NSS workbook:",
+            "NSS26_Summary_Taught_Full-time" in analysis_text
+        )
+        print(
+            "Contains Q14:",
+            "Q14" in analysis_text
+        )
+        print(
+            "Contains Q15:",
+            "Q15" in analysis_text
+        )
 
         # STEP 3: REPORTING
         reporting_result = self.reporting_agent.run(

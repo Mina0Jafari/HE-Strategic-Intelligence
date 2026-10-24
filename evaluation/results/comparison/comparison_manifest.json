@@ -1,0 +1,7 @@
+{
+  "timestamp_utc": "2026-10-24T16:29:48.592645+00:00",
+  "model": "gpt-4.1-mini",
+  "top_k": 3,
+  "question_count": 10,
+  "note": "Comparisons share a single retrieval result per question. Multi-agent tokens are not yet instrumented. Outputs are not automatically graded."
+}

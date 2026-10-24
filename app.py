@@ -5,7 +5,7 @@ from pathlib import Path
 import streamlit as st
 from dotenv import load_dotenv
 from openai import OpenAI
-from retrieval.document_retriever import search_documents
+from document_retriever import search_documents
 from agents.orchestrator_agent import OrchestratorAgent
 # -----------------------------------
 # PROJECT PATHS
@@ -65,7 +65,7 @@ with st.sidebar:
     st.write("4. Reporting Agent")
 
     st.divider()
-    st.caption("Prototype | Development Stage")
+    st.caption("Developed by Mina Jafari")
 
 # -----------------------------------
 # MAIN PAGE
@@ -172,7 +172,6 @@ if st.button("Analyse Question", type="primary"):
                     "Multi-agent strategic analysis completed!"
                 )
 
-                st.subheader("Strategic Intelligence Report")
                 st.markdown(result["report"])
 
                 st.divider()
