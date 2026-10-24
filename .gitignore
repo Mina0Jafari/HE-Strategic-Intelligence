@@ -1,6 +1,8 @@
-# API credentials
+# API credentials and secrets
 .env
 .env.*
+!.env.example
+.streamlit/secrets.toml
 
 # Python virtual environment
 .venv/
@@ -8,18 +10,27 @@ venv/
 
 # Python cache
 __pycache__/
-*.pyc
+*.py[cod]
+.pytest_cache/
 
-# Streamlit secrets
-.streamlit/secrets.toml
-
-# Local files
+# IDE and operating system
+.vscode/
+.idea/
 .DS_Store
+Thumbs.db
 
-# Local vector database
+# Local ChromaDB databases
 chroma_db/
+chroma_store/
+chroma_data/
+chroma_storage/
+evaluation/chunk_tuning_chroma/
 
-# Large downloaded NSS and external datasets
+# Downloaded external datasets
 data/external/
 data/NSS26_Summary_Taught_All_modes.xlsx
+
+# Temporary files
 *.partial
+*.tmp
+*.log
