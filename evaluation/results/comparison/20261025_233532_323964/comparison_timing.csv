@@ -1,0 +1,4 @@
+question_id,category,system,model,status,retrieval_seconds,generation_seconds,total_seconds,input_tokens,output_tokens,total_tokens,planning_input_tokens,planning_output_tokens,generation_input_tokens,generation_output_tokens,generation_total_tokens,planning_method,selected_sources,retrieval_warnings,evidence_count,error
+Q01,retention,standalone,gpt-4.1-mini,ok,0.0,3.2986,3.2986,237,372,609,,,237,372,609,,[],[],0,
+Q01,retention,single_rag,gpt-4.1-mini,ok,5.0162,4.5415,9.5577,1008,786,1794,288,47,720,739,1459,validated_llm_plan,"['ofs_outcomes', 'institutional']",[],4,
+Q01,retention,multi_agent,gpt-4.1-mini,ok,5.0162,13.6036,18.6197,2909,1773,4682,288,47,2621,1726,4347,validated_llm_plan,"['ofs_outcomes', 'institutional']",[],4,
